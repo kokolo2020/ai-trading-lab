@@ -3,7 +3,7 @@ from pathlib import Path
 P=Path("paper_state.json")
 def utc():return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
 def get(url):
- with urllib.request.urlopen(urllib.request.Request("https://api.binance.com/api/v3/"+url,headers={"User-Agent":"PaperLab/9.2"}),timeout=20) as r:return json.load(r)
+ with urllib.request.urlopen(urllib.request.Request("https://api.kucoin.com/api/v1/"+url,headers={"User-Agent":"PaperLab/9.2"}),timeout=20) as r:\n  result=json.load(r)\n  if result.get("code")!="200000":raise RuntimeError("KuCoin API rejected request: "+str(result.get("code")))\n  return result["data"]
 def event(s,msg):s["events"]=[{"time":utc(),"message":msg}]+s["events"][:79]
 def equity(s,px):
  unreal=0
@@ -25,9 +25,9 @@ def ema(a,n):
 def run():
  s=json.loads(P.read_text())
  try:
-  tick={x["symbol"]:x for x in get("ticker/24hr") if x["symbol"].endswith("USDT")}
+  tick={x["symbol"]:x for x in get("market/allTickers")["ticker"] if x["symbol"].endswith("-USDT")}
   universe=["BTC","ETH","SOL","NEAR","LINK","XRP","ADA","DOGE","AVAX","SUI","BNB","LTC","DOT","UNI","AAVE","FIL","ICP","APT"]
-  px={a+"USDT":float(tick[a+"USDT"]["lastPrice"]) for a in universe if a+"USDT" in tick}
+  px={a+"-USDT":float(tick[a+"USDT"]["last"]) for a in universe if a+"USDT" in tick}
   if len(px)<12:raise RuntimeError("Insufficient live prices")
   s["last_market_data"]=utc();s["status"]="RUNNING";s["error"]=None
   day=utc()[:10]
@@ -46,13 +46,13 @@ def run():
    equity(s,px)
   candidates=[]
   if not s["halted"]:
-   liquid=sorted([k for k in px if float(tick[k]["quoteVolume"])>=20000000],key=lambda k:float(tick[k]["quoteVolume"]),reverse=True)[:12]
+   liquid=sorted([k for k in px if float(tick[k]["volValue"])>=20000000],key=lambda k:float(tick[k]["quoteVolume"]),reverse=True)[:12]
    for sym in liquid:
     if any(p["symbol"]==sym for p in s["positions"]):continue
     try:
-     rows=get("klines?symbol="+sym+"&interval=1h&limit=55")[:-1]
+     rows=sorted(get("market/candles?symbol="+sym+"&type=1hour"),key=lambda row:int(row[0]))[:-1][-54:]
      if len(rows)<35:continue
-     c=[float(x[4]) for x in rows];h=[float(x[2]) for x in rows];l=[float(x[3]) for x in rows]
+     c=[float(x[2]) for x in rows];h=[float(x[3]) for x in rows];l=[float(x[4]) for x in rows]
      mom=c[-1]/c[-4]-1;e9=ema(c,9);e21=ema(c,21)
      direction=1 if e9>e21 and mom>.008 else (-1 if e9<e21 and mom<-.008 else 0)
      atr=sum(max(h[i]-l[i],abs(h[i]-c[i-1]),abs(l[i]-c[i-1])) for i in range(-14,0))/14
