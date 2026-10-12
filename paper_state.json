@@ -1,0 +1,20 @@
+{
+  "version": "9.2",
+  "mode": "PAPER",
+  "initial_equity": 10000,
+  "cash": 10000,
+  "equity": 10000,
+  "realized_pnl": 0,
+  "positions": [],
+  "trades": [],
+  "events": [],
+  "equity_curve": [],
+  "last_run": null,
+  "last_market_data": null,
+  "status": "NOT_STARTED",
+  "error": null,
+  "day": null,
+  "day_start_equity": 10000,
+  "halted": false,
+  "run_count": 0
+}
