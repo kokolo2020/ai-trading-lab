@@ -3,7 +3,10 @@ from pathlib import Path
 P=Path("paper_state.json")
 def utc():return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
 def get(url):
- with urllib.request.urlopen(urllib.request.Request("https://api.kucoin.com/api/v1/"+url,headers={"User-Agent":"PaperLab/9.2"}),timeout=20) as r:\n  result=json.load(r)\n  if result.get("code")!="200000":raise RuntimeError("KuCoin API rejected request: "+str(result.get("code")))\n  return result["data"]
+ with urllib.request.urlopen(urllib.request.Request("https://api.kucoin.com/api/v1/"+url,headers={"User-Agent":"PaperLab/9.2"}),timeout=20) as r: 
+  result=json.load(r)
+  if result.get("code")!="200000":raise RuntimeError("KuCoin API rejected request: "+str(result.get("code")))
+  return result["data"]
 def event(s,msg):s["events"]=[{"time":utc(),"message":msg}]+s["events"][:79]
 def equity(s,px):
  unreal=0
@@ -71,4 +74,6 @@ def run():
   s["run_count"]+=1;event(s,"Cycle completed; equity "+str(s["equity"]))
  except Exception as e:s["status"]="DATA_ERROR";s["error"]=str(e);event(s,"DATA ERROR "+str(e))
  s["last_run"]=utc();P.write_text(json.dumps(s,indent=2,allow_nan=False)+"\n")
-if __name__=="__main__":run()
+if __name__=="__main__":
+ run()
+ if json.loads(P.read_text())["status"]=="DATA_ERROR":raise SystemExit("Market feed failed; inspect paper_state.json")
