@@ -30,8 +30,8 @@ def run():
  try:
   tick={x["symbol"]:x for x in get("market/allTickers")["ticker"] if x["symbol"].endswith("-USDT")}
   universe=["BTC","ETH","SOL","NEAR","LINK","XRP","ADA","DOGE","AVAX","SUI","BNB","LTC","DOT","UNI","AAVE","FIL","ICP","APT"]
-  px={a+"-USDT":float(tick[a+"USDT"]["last"]) for a in universe if a+"USDT" in tick}
-  if len(px)<12:raise RuntimeError("Insufficient live prices")
+  px={a+"-USDT":float(tick[a+"-USDT"]["last"]) for a in universe if a+"-USDT" in tick}
+  if len(px)<12:raise RuntimeError("Insufficient live KuCoin prices: "+str(len(px)))
   s["last_market_data"]=utc();s["status"]="RUNNING";s["error"]=None
   day=utc()[:10]
   if s["day"]!=day:s["day"]=day;s["day_start_equity"]=s["equity"];s["halted"]=False
@@ -49,7 +49,7 @@ def run():
    equity(s,px)
   candidates=[]
   if not s["halted"]:
-   liquid=sorted([k for k in px if float(tick[k]["volValue"])>=20000000],key=lambda k:float(tick[k]["quoteVolume"]),reverse=True)[:12]
+   liquid=sorted([k for k in px if float(tick[k]["volValue"])>=20000000],key=lambda k:float(tick[k]["volValue"]),reverse=True)[:12]
    for sym in liquid:
     if any(p["symbol"]==sym for p in s["positions"]):continue
     try:
