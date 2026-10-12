@@ -27,7 +27,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "paper: save simulation cycle [skip ci]"
             git push
+          fi
       - name: Fail workflow on market data error
         if: env.ENGINE_FAILED == '1'
         run: exit 1
-          fi
