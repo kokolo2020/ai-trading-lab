@@ -7,12 +7,17 @@
   "realized_pnl": 0,
   "positions": [],
   "trades": [],
-  "events": [],
+  "events": [
+    {
+      "time": "2026-10-12T08:08:14+00:00",
+      "message": "DATA ERROR HTTP Error 451: "
+    }
+  ],
   "equity_curve": [],
-  "last_run": null,
+  "last_run": "2026-10-12T08:08:14+00:00",
   "last_market_data": null,
-  "status": "NOT_STARTED",
-  "error": null,
+  "status": "DATA_ERROR",
+  "error": "HTTP Error 451: ",
   "day": null,
   "day_start_equity": 10000,
   "halted": false,
