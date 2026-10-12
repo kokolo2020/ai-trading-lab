@@ -2,12 +2,57 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 10000,
-  "equity": 10000,
+  "cash": 5996.0,
+  "equity": 9989.997,
   "realized_pnl": 0,
-  "positions": [],
+  "positions": [
+    {
+      "id": "1791810076037UNI-USDT",
+      "symbol": "UNI-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 265.54668634048954,
+      "entry": 7.531632300000001,
+      "entry_time": "2026-10-12T13:01:16+00:00",
+      "margin": 2000.0,
+      "entry_fee": 2.0,
+      "stop": 7.688445157142858,
+      "take": 7.218006585714288,
+      "fill_type": "SIMULATED",
+      "mark": 7.5354,
+      "unrealized_pnl": -5.0015
+    },
+    {
+      "id": "1791810076037BTC-USDT",
+      "symbol": "BTC-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 0.02419996226995982,
+      "entry": 82644.75695000001,
+      "entry_time": "2026-10-12T13:01:16+00:00",
+      "margin": 2000.0,
+      "entry_fee": 2.0,
+      "stop": 83636.99015000001,
+      "take": 80660.29055,
+      "fill_type": "SIMULATED",
+      "mark": 82686.1,
+      "unrealized_pnl": -5.0015
+    }
+  ],
   "trades": [],
   "events": [
+    {
+      "time": "2026-10-12T13:01:16+00:00",
+      "message": "Cycle completed; equity 9989.997"
+    },
+    {
+      "time": "2026-10-12T13:01:16+00:00",
+      "message": "SIM OPEN SHORT BTC-USDT notional 2000.0"
+    },
+    {
+      "time": "2026-10-12T13:01:16+00:00",
+      "message": "SIM OPEN SHORT UNI-USDT notional 2000.0"
+    },
     {
       "time": "2026-10-12T08:15:34+00:00",
       "message": "Cycle completed; equity 10000"
@@ -21,14 +66,18 @@
     {
       "time": "2026-10-12T08:15:34+00:00",
       "equity": 10000
+    },
+    {
+      "time": "2026-10-12T13:01:16+00:00",
+      "equity": 9989.997
     }
   ],
-  "last_run": "2026-10-12T08:15:34+00:00",
-  "last_market_data": "2026-10-12T08:15:33+00:00",
+  "last_run": "2026-10-12T13:01:16+00:00",
+  "last_market_data": "2026-10-12T13:01:15+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-12",
   "day_start_equity": 10000,
   "halted": false,
-  "run_count": 1
+  "run_count": 2
 }
