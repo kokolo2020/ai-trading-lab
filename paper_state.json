@@ -9,17 +9,26 @@
   "trades": [],
   "events": [
     {
+      "time": "2026-10-12T08:15:34+00:00",
+      "message": "Cycle completed; equity 10000"
+    },
+    {
       "time": "2026-10-12T08:08:14+00:00",
       "message": "DATA ERROR HTTP Error 451: "
     }
   ],
-  "equity_curve": [],
-  "last_run": "2026-10-12T08:08:14+00:00",
-  "last_market_data": null,
-  "status": "DATA_ERROR",
-  "error": "HTTP Error 451: ",
-  "day": null,
+  "equity_curve": [
+    {
+      "time": "2026-10-12T08:15:34+00:00",
+      "equity": 10000
+    }
+  ],
+  "last_run": "2026-10-12T08:15:34+00:00",
+  "last_market_data": "2026-10-12T08:15:33+00:00",
+  "status": "RUNNING",
+  "error": null,
+  "day": "2026-10-12",
   "day_start_equity": 10000,
   "halted": false,
-  "run_count": 0
+  "run_count": 1
 }
