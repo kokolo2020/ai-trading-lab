@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 4040.993413998959,
-  "equity": 10200.9139,
+  "equity": 10225.4361,
   "realized_pnl": 143.8218256789603,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 13.237710992857142,
       "take": 12.302079564285714,
       "fill_type": "SIMULATED",
-      "mark": 12.4681,
-      "unrealized_pnl": 67.3062
+      "mark": 12.4556,
+      "unrealized_pnl": 69.2542
     },
     {
       "id": "1791991579850XRP-USDT",
@@ -35,8 +35,8 @@
       "stop": 1.3578768842857145,
       "take": 1.2952197414285715,
       "fill_type": "SIMULATED",
-      "mark": 1.33766,
-      "unrealized_pnl": -5.1071
+      "mark": 1.32801,
+      "unrealized_pnl": 9.6478
     },
     {
       "id": "1791991579850ETH-USDT",
@@ -51,8 +51,8 @@
       "stop": 2472.894070714286,
       "take": 2371.8412135714284,
       "fill_type": "SIMULATED",
-      "mark": 2440.43,
-      "unrealized_pnl": -5.1071
+      "mark": 2431.1,
+      "unrealized_pnl": 2.7122
     }
   ],
   "trades": [
@@ -142,6 +142,10 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-10-14T19:36:42+00:00",
+      "message": "Cycle completed; equity 10225.4361"
+    },
     {
       "time": "2026-10-14T15:26:19+00:00",
       "message": "Cycle completed; equity 10200.9139"
@@ -279,14 +283,18 @@
     {
       "time": "2026-10-14T15:26:19+00:00",
       "equity": 10200.9139
+    },
+    {
+      "time": "2026-10-14T19:36:42+00:00",
+      "equity": 10225.4361
     }
   ],
-  "last_run": "2026-10-14T15:26:19+00:00",
-  "last_market_data": "2026-10-14T15:26:18+00:00",
+  "last_run": "2026-10-14T19:36:42+00:00",
+  "last_market_data": "2026-10-14T19:36:42+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-14",
   "day_start_equity": 10066.4826,
   "halted": false,
-  "run_count": 11
+  "run_count": 12
 }
