@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 4633.589233749941,
-  "equity": 10066.4826,
+  "equity": 10027.9935,
   "realized_pnl": 26.762941764359937,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 83636.99015000001,
       "take": 80660.29055,
       "fill_type": "SIMULATED",
-      "mark": 83491.2,
-      "unrealized_pnl": -24.5044
+      "mark": 83621.3,
+      "unrealized_pnl": -27.6559
     },
     {
       "id": "1791841331225NEAR-USDT",
@@ -35,8 +35,8 @@
       "stop": 5.555473800000001,
       "take": 4.968208800000001,
       "fill_type": "SIMULATED",
-      "mark": 5.0813,
-      "unrealized_pnl": 68.7732
+      "mark": 5.1696,
+      "unrealized_pnl": 46.0894
     },
     {
       "id": "1791884758723LINK-USDT",
@@ -51,8 +51,8 @@
       "stop": 13.237710992857142,
       "take": 12.302079564285714,
       "fill_type": "SIMULATED",
-      "mark": 12.9292,
-      "unrealized_pnl": -4.5491
+      "mark": 13.0104,
+      "unrealized_pnl": -17.2029
     }
   ],
   "trades": [
@@ -100,6 +100,10 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-10-14T00:43:46+00:00",
+      "message": "Cycle completed; equity 10027.9935"
+    },
     {
       "time": "2026-10-13T21:51:15+00:00",
       "message": "Cycle completed; equity 10066.4826"
@@ -189,14 +193,18 @@
     {
       "time": "2026-10-13T21:51:15+00:00",
       "equity": 10066.4826
+    },
+    {
+      "time": "2026-10-14T00:43:46+00:00",
+      "equity": 10027.9935
     }
   ],
-  "last_run": "2026-10-13T21:51:15+00:00",
-  "last_market_data": "2026-10-13T21:51:14+00:00",
+  "last_run": "2026-10-14T00:43:46+00:00",
+  "last_market_data": "2026-10-14T00:43:44+00:00",
   "status": "RUNNING",
   "error": null,
-  "day": "2026-10-13",
-  "day_start_equity": 10044.1798,
+  "day": "2026-10-14",
+  "day_start_equity": 10066.4826,
   "halted": false,
-  "run_count": 7
+  "run_count": 8
 }
