@@ -2,9 +2,9 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 6202.628949117839,
-  "equity": 10307.4764,
-  "realized_pnl": 322.04146633784006,
+  "cash": 7036.549533388859,
+  "equity": 10220.143,
+  "realized_pnl": 238.8290849465639,
   "positions": [
     {
       "id": "1791991579850XRP-USDT",
@@ -19,9 +19,27 @@
       "stop": 1.3578768842857145,
       "take": 1.2952197414285715,
       "fill_type": "SIMULATED",
-      "mark": 1.32295,
-      "unrealized_pnl": 17.3846
+      "mark": 1.34465,
+      "unrealized_pnl": -15.7949
     },
+    {
+      "id": "1792091055570NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 214.76962605041996,
+      "entry": 5.386491899999999,
+      "entry_time": "2026-10-15T19:04:15+00:00",
+      "margin": 1156.854851086616,
+      "entry_fee": 1.1568548510866161,
+      "stop": 5.148491899999999,
+      "take": 5.8624919,
+      "fill_type": "SIMULATED",
+      "mark": 5.3838,
+      "unrealized_pnl": -2.8913
+    }
+  ],
+  "trades": [
     {
       "id": "1792041875983ETH-USDT",
       "symbol": "ETH-USDT",
@@ -36,10 +54,13 @@
       "take": 2274.529021428571,
       "fill_type": "SIMULATED",
       "mark": 2395.59,
-      "unrealized_pnl": -31.9496
-    }
-  ],
-  "trades": [
+      "unrealized_pnl": -31.9496,
+      "exit": 2453.9863800000003,
+      "exit_time": "2026-10-15T19:04:13+00:00",
+      "exit_fee": 2.152058850940336,
+      "net_pnl": -83.2124,
+      "reason": "STOP"
+    },
     {
       "id": "1791991579850ETH-USDT",
       "symbol": "ETH-USDT",
@@ -168,6 +189,18 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-10-15T19:04:15+00:00",
+      "message": "Cycle completed; equity 10220.143"
+    },
+    {
+      "time": "2026-10-15T19:04:15+00:00",
+      "message": "SIM OPEN LONG NEAR-USDT notional 1156.85"
+    },
+    {
+      "time": "2026-10-15T19:04:13+00:00",
+      "message": "SIM CLOSE SHORT ETH-USDT STOP PNL -83.21"
+    },
     {
       "time": "2026-10-15T15:02:14+00:00",
       "message": "Cycle completed; equity 10307.4764"
@@ -365,14 +398,18 @@
     {
       "time": "2026-10-15T15:02:14+00:00",
       "equity": 10307.4764
+    },
+    {
+      "time": "2026-10-15T19:04:15+00:00",
+      "equity": 10220.143
     }
   ],
-  "last_run": "2026-10-15T15:02:14+00:00",
-  "last_market_data": "2026-10-15T15:02:13+00:00",
+  "last_run": "2026-10-15T19:04:15+00:00",
+  "last_market_data": "2026-10-15T19:04:13+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-15",
   "day_start_equity": 10240.5936,
   "halted": false,
-  "run_count": 17
+  "run_count": 18
 }
