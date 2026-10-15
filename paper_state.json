@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 6202.628949117839,
-  "equity": 10360.1738,
+  "equity": 10346.0135,
   "realized_pnl": 322.04146633784006,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 1.3578768842857145,
       "take": 1.2952197414285715,
       "fill_type": "SIMULATED",
-      "mark": 1.30599,
-      "unrealized_pnl": 43.3165
+      "mark": 1.3135,
+      "unrealized_pnl": 31.8337
     },
     {
       "id": "1792041875983ETH-USDT",
@@ -35,8 +35,8 @@
       "stop": 2408.611664285714,
       "take": 2274.529021428571,
       "fill_type": "SIMULATED",
-      "mark": 2365.1,
-      "unrealized_pnl": -5.1842
+      "mark": 2368.15,
+      "unrealized_pnl": -7.8617
     }
   ],
   "trades": [
@@ -168,6 +168,10 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-10-15T10:10:58+00:00",
+      "message": "Cycle completed; equity 10346.0135"
+    },
     {
       "time": "2026-10-15T05:24:35+00:00",
       "message": "Cycle completed; equity 10360.1738"
@@ -349,14 +353,18 @@
     {
       "time": "2026-10-15T05:24:35+00:00",
       "equity": 10360.1738
+    },
+    {
+      "time": "2026-10-15T10:10:58+00:00",
+      "equity": 10346.0135
     }
   ],
-  "last_run": "2026-10-15T05:24:35+00:00",
-  "last_market_data": "2026-10-15T05:24:35+00:00",
+  "last_run": "2026-10-15T10:10:58+00:00",
+  "last_market_data": "2026-10-15T10:10:58+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-15",
   "day_start_equity": 10240.5936,
   "halted": false,
-  "run_count": 15
+  "run_count": 16
 }
