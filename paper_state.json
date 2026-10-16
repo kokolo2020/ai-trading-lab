@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 4992.15289910886,
-  "equity": 10222.008,
+  "equity": 10223.8843,
   "realized_pnl": 238.8290849465639,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 1.3578768842857145,
       "take": 1.2952197414285715,
       "fill_type": "SIMULATED",
-      "mark": 1.3409,
-      "unrealized_pnl": -10.0611
+      "mark": 1.33343,
+      "unrealized_pnl": 1.3606
     },
     {
       "id": "1792091055570NEAR-USDT",
@@ -35,8 +35,8 @@
       "stop": 5.148491899999999,
       "take": 5.8624919,
       "fill_type": "SIMULATED",
-      "mark": 5.2337,
-      "unrealized_pnl": -35.096
+      "mark": 5.2361,
+      "unrealized_pnl": -34.581
     },
     {
       "id": "1792102312622AAVE-USDT",
@@ -51,8 +51,8 @@
       "stop": 155.45343957142856,
       "take": 166.09750385714284,
       "fill_type": "SIMULATED",
-      "mark": 161.528,
-      "unrealized_pnl": 28.3359
+      "mark": 160.744,
+      "unrealized_pnl": 18.2756
     }
   ],
   "trades": [
@@ -205,6 +205,10 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-10-16T14:05:14+00:00",
+      "message": "Cycle completed; equity 10223.8843"
+    },
     {
       "time": "2026-10-16T09:22:38+00:00",
       "message": "Cycle completed; equity 10222.008"
@@ -454,14 +458,18 @@
     {
       "time": "2026-10-16T09:22:38+00:00",
       "equity": 10222.008
+    },
+    {
+      "time": "2026-10-16T14:05:14+00:00",
+      "equity": 10223.8843
     }
   ],
-  "last_run": "2026-10-16T09:22:38+00:00",
-  "last_market_data": "2026-10-16T09:22:37+00:00",
+  "last_run": "2026-10-16T14:05:14+00:00",
+  "last_market_data": "2026-10-16T14:05:12+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-16",
   "day_start_equity": 10206.667,
   "halted": false,
-  "run_count": 22
+  "run_count": 23
 }
