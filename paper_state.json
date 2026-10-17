@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 4513.021382006094,
-  "equity": 10159.9685,
+  "equity": 10132.5065,
   "realized_pnl": 152.5610735104191,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 5.194693314285715,
       "take": 4.707461171428571,
       "fill_type": "SIMULATED",
-      "mark": 4.9566,
-      "unrealized_pnl": 20.5331
+      "mark": 5.0026,
+      "unrealized_pnl": 6.1411
     },
     {
       "id": "1792173568406XRP-USDT",
@@ -35,8 +35,8 @@
       "stop": 1.3172916135714288,
       "take": 1.2623573278571432,
       "fill_type": "SIMULATED",
-      "mark": 1.29827,
-      "unrealized_pnl": -2.9498
+      "mark": 1.30349,
+      "unrealized_pnl": -11.1176
     },
     {
       "id": "1792173568406SOL-USDT",
@@ -51,8 +51,8 @@
       "stop": 105.33993071428571,
       "take": 100.29457357142857,
       "fill_type": "SIMULATED",
-      "mark": 103.97,
-      "unrealized_pnl": -10.1759
+      "mark": 104.22,
+      "unrealized_pnl": -15.078
     }
   ],
   "trades": [
@@ -268,6 +268,10 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-10-17T21:02:52+00:00",
+      "message": "Cycle completed; equity 10132.5065"
+    },
     {
       "time": "2026-10-17T18:46:15+00:00",
       "message": "Cycle completed; equity 10159.9685"
@@ -621,14 +625,18 @@
     {
       "time": "2026-10-17T18:46:15+00:00",
       "equity": 10159.9685
+    },
+    {
+      "time": "2026-10-17T21:02:52+00:00",
+      "equity": 10132.5065
     }
   ],
-  "last_run": "2026-10-17T18:46:15+00:00",
-  "last_market_data": "2026-10-17T18:46:15+00:00",
+  "last_run": "2026-10-17T21:02:52+00:00",
+  "last_market_data": "2026-10-17T21:02:51+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-17",
   "day_start_equity": 10095.8171,
   "halted": false,
-  "run_count": 32
+  "run_count": 33
 }
