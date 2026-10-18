@@ -2,10 +2,43 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 10296.238585419569,
-  "equity": 10296.2386,
+  "cash": 6470.583654846212,
+  "equity": 10286.6811,
   "realized_pnl": 296.23858541957054,
-  "positions": [],
+  "positions": [
+    {
+      "id": "1792359429464NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 375.8535158531504,
+      "entry": 4.689554050000001,
+      "entry_time": "2026-10-18T21:37:09+00:00",
+      "margin": 1762.585377475881,
+      "entry_fee": 1.762585377475881,
+      "stop": 4.826525478571429,
+      "take": 4.415611192857144,
+      "fill_type": "SIMULATED",
+      "mark": 4.6919,
+      "unrealized_pnl": -4.4078
+    },
+    {
+      "id": "1792359429464AVAX-USDT",
+      "symbol": "AVAX-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 219.01539905702828,
+      "entry": 9.4022965,
+      "entry_time": "2026-10-18T21:37:09+00:00",
+      "margin": 2059.2477200000003,
+      "entry_fee": 2.0592477200000006,
+      "stop": 9.560517928571429,
+      "take": 9.085853642857144,
+      "fill_type": "SIMULATED",
+      "mark": 9.407,
+      "unrealized_pnl": -5.1497
+    }
+  ],
   "trades": [
     {
       "id": "1792173568406SOL-USDT",
@@ -282,6 +315,18 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-10-18T21:37:09+00:00",
+      "message": "Cycle completed; equity 10286.6811"
+    },
+    {
+      "time": "2026-10-18T21:37:09+00:00",
+      "message": "SIM OPEN SHORT AVAX-USDT notional 2059.25"
+    },
+    {
+      "time": "2026-10-18T21:37:09+00:00",
+      "message": "SIM OPEN SHORT NEAR-USDT notional 1762.59"
+    },
     {
       "time": "2026-10-18T19:20:02+00:00",
       "message": "Cycle completed; equity 10296.2386"
@@ -711,14 +756,18 @@
     {
       "time": "2026-10-18T19:20:02+00:00",
       "equity": 10296.2386
+    },
+    {
+      "time": "2026-10-18T21:37:09+00:00",
+      "equity": 10286.6811
     }
   ],
-  "last_run": "2026-10-18T19:20:02+00:00",
-  "last_market_data": "2026-10-18T19:20:01+00:00",
+  "last_run": "2026-10-18T21:37:09+00:00",
+  "last_market_data": "2026-10-18T21:37:08+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-18",
   "day_start_equity": 10215.4288,
   "halted": false,
-  "run_count": 40
+  "run_count": 41
 }
