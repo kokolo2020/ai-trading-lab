@@ -2,26 +2,10 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 4463.5950895270325,
-  "equity": 10003.851,
-  "realized_pnl": 87.11395693420712,
+  "cash": 3990.9754593239104,
+  "equity": 9993.9861,
+  "realized_pnl": 31.652521743911905,
   "positions": [
-    {
-      "id": "1792374203742NEAR-USDT",
-      "symbol": "NEAR-USDT",
-      "side": "LONG",
-      "direction": 1,
-      "qty": 311.2181574562991,
-      "entry": 5.08664205,
-      "entry_time": "2026-10-19T01:43:23+00:00",
-      "margin": 1583.055366440732,
-      "entry_fee": 1.583055366440732,
-      "stop": 4.924583478571429,
-      "take": 5.410759192857142,
-      "fill_type": "SIMULATED",
-      "mark": 4.9463,
-      "unrealized_pnl": -46.7994
-    },
     {
       "id": "1792374203742XRP-USDT",
       "symbol": "XRP-USDT",
@@ -35,8 +19,8 @@
       "stop": 1.2936252,
       "take": 1.3519181999999998,
       "fill_type": "SIMULATED",
-      "mark": 1.30445,
-      "unrealized_pnl": -17.2445
+      "mark": 1.30499,
+      "unrealized_pnl": -16.4156
     },
     {
       "id": "1792374203742BTC-USDT",
@@ -51,11 +35,48 @@
       "stop": 81562.32119999999,
       "take": 84532.72439999999,
       "fill_type": "SIMULATED",
-      "mark": 81930.5,
-      "unrealized_pnl": -19.219
+      "mark": 82052.0,
+      "unrealized_pnl": -16.2528
+    },
+    {
+      "id": "1792452855254SOL-USDT",
+      "symbol": "SOL-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 19.007202560758422,
+      "entry": 105.21257999999999,
+      "entry_time": "2026-10-19T23:34:15+00:00",
+      "margin": 1999.79682,
+      "entry_fee": 1.99979682,
+      "stop": 103.68379428571428,
+      "take": 108.27015142857141,
+      "fill_type": "SIMULATED",
+      "mark": 105.16,
+      "unrealized_pnl": -4.998
     }
   ],
   "trades": [
+    {
+      "id": "1792374203742NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 311.2181574562991,
+      "entry": 5.08664205,
+      "entry_time": "2026-10-19T01:43:23+00:00",
+      "margin": 1583.055366440732,
+      "entry_fee": 1.583055366440732,
+      "stop": 4.924583478571429,
+      "take": 5.410759192857142,
+      "fill_type": "SIMULATED",
+      "mark": 4.9463,
+      "unrealized_pnl": -46.7994,
+      "exit": 4.9184395499999995,
+      "exit_time": "2026-10-19T23:34:14+00:00",
+      "exit_fee": 1.5307076943111886,
+      "net_pnl": -55.4614,
+      "reason": "STOP"
+    },
     {
       "id": "1792359429464AVAX-USDT",
       "symbol": "AVAX-USDT",
@@ -374,6 +395,18 @@
   ],
   "events": [
     {
+      "time": "2026-10-19T23:34:15+00:00",
+      "message": "Cycle completed; equity 9993.9861"
+    },
+    {
+      "time": "2026-10-19T23:34:15+00:00",
+      "message": "SIM OPEN LONG SOL-USDT notional 1999.8"
+    },
+    {
+      "time": "2026-10-19T23:34:14+00:00",
+      "message": "SIM CLOSE LONG NEAR-USDT STOP PNL -55.46"
+    },
+    {
       "time": "2026-10-19T20:03:44+00:00",
       "message": "Cycle completed; equity 10003.851"
     },
@@ -680,18 +713,6 @@
     {
       "time": "2026-10-12T13:01:16+00:00",
       "message": "SIM OPEN SHORT BTC-USDT notional 2000.0"
-    },
-    {
-      "time": "2026-10-12T13:01:16+00:00",
-      "message": "SIM OPEN SHORT UNI-USDT notional 2000.0"
-    },
-    {
-      "time": "2026-10-12T08:15:34+00:00",
-      "message": "Cycle completed; equity 10000"
-    },
-    {
-      "time": "2026-10-12T08:08:14+00:00",
-      "message": "DATA ERROR HTTP Error 451: "
     }
   ],
   "equity_curve": [
@@ -878,14 +899,18 @@
     {
       "time": "2026-10-19T20:03:44+00:00",
       "equity": 10003.851
+    },
+    {
+      "time": "2026-10-19T23:34:15+00:00",
+      "equity": 9993.9861
     }
   ],
-  "last_run": "2026-10-19T20:03:44+00:00",
-  "last_market_data": "2026-10-19T20:03:44+00:00",
+  "last_run": "2026-10-19T23:34:15+00:00",
+  "last_market_data": "2026-10-19T23:34:14+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-19",
   "day_start_equity": 10087.114,
   "halted": false,
-  "run_count": 46
+  "run_count": 47
 }
