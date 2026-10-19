@@ -2,10 +2,59 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 10087.113956934205,
-  "equity": 10087.114,
+  "cash": 4463.5950895270325,
+  "equity": 10073.0734,
   "realized_pnl": 87.11395693420712,
-  "positions": [],
+  "positions": [
+    {
+      "id": "1792374203742NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 311.2181574562991,
+      "entry": 5.08664205,
+      "entry_time": "2026-10-19T01:43:23+00:00",
+      "margin": 1583.055366440732,
+      "entry_fee": 1.583055366440732,
+      "stop": 4.924583478571429,
+      "take": 5.410759192857142,
+      "fill_type": "SIMULATED",
+      "mark": 5.0841,
+      "unrealized_pnl": -3.9565
+    },
+    {
+      "id": "1792374203742XRP-USDT",
+      "symbol": "XRP-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 1536.4329417126246,
+      "entry": 1.3130562,
+      "entry_time": "2026-10-19T01:43:23+00:00",
+      "margin": 2017.4228,
+      "entry_fee": 2.0174228000000003,
+      "stop": 1.2936252,
+      "take": 1.3519181999999998,
+      "fill_type": "SIMULATED",
+      "mark": 1.3124,
+      "unrealized_pnl": -5.042
+    },
+    {
+      "id": "1792374203742BTC-USDT",
+      "symbol": "BTC-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 0.024438071349145916,
+      "entry": 82552.45559999999,
+      "entry_time": "2026-10-19T01:43:23+00:00",
+      "margin": 2017.4228,
+      "entry_fee": 2.0174228000000003,
+      "stop": 81562.32119999999,
+      "take": 84532.72439999999,
+      "fill_type": "SIMULATED",
+      "mark": 82511.2,
+      "unrealized_pnl": -5.042
+    }
+  ],
   "trades": [
     {
       "id": "1792359429464AVAX-USDT",
@@ -324,6 +373,22 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-10-19T01:43:23+00:00",
+      "message": "Cycle completed; equity 10073.0734"
+    },
+    {
+      "time": "2026-10-19T01:43:23+00:00",
+      "message": "SIM OPEN LONG BTC-USDT notional 2017.42"
+    },
+    {
+      "time": "2026-10-19T01:43:23+00:00",
+      "message": "SIM OPEN LONG XRP-USDT notional 2017.42"
+    },
+    {
+      "time": "2026-10-19T01:43:23+00:00",
+      "message": "SIM OPEN LONG NEAR-USDT notional 1583.06"
+    },
     {
       "time": "2026-10-18T23:39:17+00:00",
       "message": "Cycle completed; equity 10087.114"
@@ -785,14 +850,18 @@
     {
       "time": "2026-10-18T23:39:17+00:00",
       "equity": 10087.114
+    },
+    {
+      "time": "2026-10-19T01:43:23+00:00",
+      "equity": 10073.0734
     }
   ],
-  "last_run": "2026-10-18T23:39:17+00:00",
-  "last_market_data": "2026-10-18T23:39:16+00:00",
+  "last_run": "2026-10-19T01:43:23+00:00",
+  "last_market_data": "2026-10-19T01:43:22+00:00",
   "status": "RUNNING",
   "error": null,
-  "day": "2026-10-18",
-  "day_start_equity": 10215.4288,
+  "day": "2026-10-19",
+  "day_start_equity": 10087.114,
   "halted": false,
-  "run_count": 42
+  "run_count": 43
 }
