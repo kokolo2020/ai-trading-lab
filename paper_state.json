@@ -2,10 +2,60 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 7617.720816285322,
-  "equity": 10110.3864,
-  "realized_pnl": 84.33677112486326,
+  "cash": 5160.168546672793,
+  "equity": 10003.8849,
+  "realized_pnl": 4.312986207560897,
   "positions": [
+    {
+      "id": "1792548137022NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 217.57649860677063,
+      "entry": 5.0167071,
+      "entry_time": "2026-10-21T02:02:17+00:00",
+      "margin": 1091.5175653537262,
+      "entry_fee": 1.0915175653537263,
+      "stop": 4.784717814285714,
+      "take": 5.480685671428571,
+      "fill_type": "SIMULATED",
+      "mark": 5.0679,
+      "unrealized_pnl": 8.9442
+    },
+    {
+      "id": "1792644452583UNI-USDT",
+      "symbol": "UNI-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 241.79603013619234,
+      "entry": 7.2173895,
+      "entry_time": "2026-10-22T04:47:32+00:00",
+      "margin": 1745.1361290466382,
+      "entry_fee": 1.7451361290466383,
+      "stop": 7.424449500000001,
+      "take": 6.8032695,
+      "fill_type": "SIMULATED",
+      "mark": 7.221,
+      "unrealized_pnl": -4.3641
+    },
+    {
+      "id": "1792644452583AAVE-USDT",
+      "symbol": "AAVE-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 13.363301030654984,
+      "entry": 149.86203150000003,
+      "entry_time": "2026-10-22T04:47:32+00:00",
+      "margin": 2002.65144,
+      "entry_fee": 2.00265144,
+      "stop": 153.25486721428575,
+      "take": 143.07636007142858,
+      "fill_type": "SIMULATED",
+      "mark": 149.937,
+      "unrealized_pnl": -5.0081
+    }
+  ],
+  "trades": [
     {
       "id": "1792548137022UNI-USDT",
       "symbol": "UNI-USDT",
@@ -20,26 +70,13 @@
       "take": 8.210928014285713,
       "fill_type": "SIMULATED",
       "mark": 7.5037,
-      "unrealized_pnl": -28.6921
+      "unrealized_pnl": -28.6921,
+      "exit": 7.2173895,
+      "exit_time": "2026-10-22T04:47:31+00:00",
+      "exit_fee": 1.2952783653685243,
+      "net_pnl": -80.0238,
+      "reason": "STOP"
     },
-    {
-      "id": "1792548137022NEAR-USDT",
-      "symbol": "NEAR-USDT",
-      "side": "LONG",
-      "direction": 1,
-      "qty": 217.57649860677063,
-      "entry": 5.0167071,
-      "entry_time": "2026-10-21T02:02:17+00:00",
-      "margin": 1091.5175653537262,
-      "entry_fee": 1.0915175653537263,
-      "stop": 4.784717814285714,
-      "take": 5.480685671428571,
-      "fill_type": "SIMULATED",
-      "mark": 5.2786,
-      "unrealized_pnl": 54.7417
-    }
-  ],
-  "trades": [
     {
       "id": "1792605693264AAVE-USDT",
       "symbol": "AAVE-USDT",
@@ -463,6 +500,22 @@
   ],
   "events": [
     {
+      "time": "2026-10-22T04:47:32+00:00",
+      "message": "Cycle completed; equity 10003.8849"
+    },
+    {
+      "time": "2026-10-22T04:47:32+00:00",
+      "message": "SIM OPEN SHORT AAVE-USDT notional 2002.65"
+    },
+    {
+      "time": "2026-10-22T04:47:32+00:00",
+      "message": "SIM OPEN SHORT UNI-USDT notional 1745.14"
+    },
+    {
+      "time": "2026-10-22T04:47:31+00:00",
+      "message": "SIM CLOSE LONG UNI-USDT STOP PNL -80.02"
+    },
+    {
       "time": "2026-10-22T00:10:40+00:00",
       "message": "Cycle completed; equity 10110.3864"
     },
@@ -765,22 +818,6 @@
     {
       "time": "2026-10-15T05:24:35+00:00",
       "message": "SIM CLOSE SHORT LINK-USDT TARGET PNL 121.18"
-    },
-    {
-      "time": "2026-10-15T00:51:40+00:00",
-      "message": "Cycle completed; equity 10249.9925"
-    },
-    {
-      "time": "2026-10-14T22:37:03+00:00",
-      "message": "Cycle completed; equity 10240.5936"
-    },
-    {
-      "time": "2026-10-14T19:36:42+00:00",
-      "message": "Cycle completed; equity 10225.4361"
-    },
-    {
-      "time": "2026-10-14T15:26:19+00:00",
-      "message": "Cycle completed; equity 10200.9139"
     }
   ],
   "equity_curve": [
@@ -1019,14 +1056,18 @@
     {
       "time": "2026-10-22T00:10:40+00:00",
       "equity": 10110.3864
+    },
+    {
+      "time": "2026-10-22T04:47:32+00:00",
+      "equity": 10003.8849
     }
   ],
-  "last_run": "2026-10-22T00:10:40+00:00",
-  "last_market_data": "2026-10-22T00:10:38+00:00",
+  "last_run": "2026-10-22T04:47:32+00:00",
+  "last_market_data": "2026-10-22T04:47:31+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-22",
   "day_start_equity": 10179.1903,
   "halted": false,
-  "run_count": 59
+  "run_count": 60
 }
