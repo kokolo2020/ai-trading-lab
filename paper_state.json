@@ -2,26 +2,10 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 5160.168546672793,
-  "equity": 10050.2997,
-  "realized_pnl": 4.312986207560897,
+  "cash": 6239.554652240693,
+  "equity": 9990.8174,
+  "realized_pnl": -8.90999114361879,
   "positions": [
-    {
-      "id": "1792548137022NEAR-USDT",
-      "symbol": "NEAR-USDT",
-      "side": "LONG",
-      "direction": 1,
-      "qty": 217.57649860677063,
-      "entry": 5.0167071,
-      "entry_time": "2026-10-21T02:02:17+00:00",
-      "margin": 1091.5175653537262,
-      "entry_fee": 1.0915175653537263,
-      "stop": 4.784717814285714,
-      "take": 5.480685671428571,
-      "fill_type": "SIMULATED",
-      "mark": 4.9045,
-      "unrealized_pnl": -26.5722
-    },
     {
       "id": "1792644452583UNI-USDT",
       "symbol": "UNI-USDT",
@@ -35,8 +19,8 @@
       "stop": 7.424449500000001,
       "take": 6.8032695,
       "fill_type": "SIMULATED",
-      "mark": 7.0132,
-      "unrealized_pnl": 45.9313
+      "mark": 7.2054,
+      "unrealized_pnl": -0.5884
     },
     {
       "id": "1792644452583AAVE-USDT",
@@ -51,11 +35,32 @@
       "stop": 153.25486721428575,
       "take": 143.07636007142858,
       "fill_type": "SIMULATED",
-      "mark": 147.572,
-      "unrealized_pnl": 26.6277
+      "mark": 149.539,
+      "unrealized_pnl": 0.3158
     }
   ],
   "trades": [
+    {
+      "id": "1792548137022NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 217.57649860677063,
+      "entry": 5.0167071,
+      "entry_time": "2026-10-21T02:02:17+00:00",
+      "margin": 1091.5175653537262,
+      "entry_fee": 1.0915175653537263,
+      "stop": 4.784717814285714,
+      "take": 5.480685671428571,
+      "fill_type": "SIMULATED",
+      "mark": 4.9045,
+      "unrealized_pnl": -26.5722,
+      "exit": 4.9659158,
+      "exit_time": "2026-10-23T05:18:05+00:00",
+      "exit_fee": 1.0804665721400404,
+      "net_pnl": -13.223,
+      "reason": "TIME EXIT"
+    },
     {
       "id": "1792548137022UNI-USDT",
       "symbol": "UNI-USDT",
@@ -500,6 +505,14 @@
   ],
   "events": [
     {
+      "time": "2026-10-23T05:18:07+00:00",
+      "message": "Cycle completed; equity 9990.8174"
+    },
+    {
+      "time": "2026-10-23T05:18:05+00:00",
+      "message": "SIM CLOSE LONG NEAR-USDT TIME EXIT PNL -13.22"
+    },
+    {
       "time": "2026-10-23T00:33:33+00:00",
       "message": "Cycle completed; equity 10050.2997"
     },
@@ -810,14 +823,6 @@
     {
       "time": "2026-10-15T19:04:15+00:00",
       "message": "SIM OPEN LONG NEAR-USDT notional 1156.85"
-    },
-    {
-      "time": "2026-10-15T19:04:13+00:00",
-      "message": "SIM CLOSE SHORT ETH-USDT STOP PNL -83.21"
-    },
-    {
-      "time": "2026-10-15T15:02:14+00:00",
-      "message": "Cycle completed; equity 10307.4764"
     }
   ],
   "equity_curve": [
@@ -1080,14 +1085,18 @@
     {
       "time": "2026-10-23T00:33:33+00:00",
       "equity": 10050.2997
+    },
+    {
+      "time": "2026-10-23T05:18:07+00:00",
+      "equity": 9990.8174
     }
   ],
-  "last_run": "2026-10-23T00:33:33+00:00",
-  "last_market_data": "2026-10-23T00:33:32+00:00",
+  "last_run": "2026-10-23T05:18:07+00:00",
+  "last_market_data": "2026-10-23T05:18:05+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-23",
   "day_start_equity": 10050.4332,
   "halted": false,
-  "run_count": 65
+  "run_count": 66
 }
