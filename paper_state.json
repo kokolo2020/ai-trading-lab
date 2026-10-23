@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 5160.168546672793,
-  "equity": 10050.4332,
+  "equity": 10050.2997,
   "realized_pnl": 4.312986207560897,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 4.784717814285714,
       "take": 5.480685671428571,
       "fill_type": "SIMULATED",
-      "mark": 4.911,
-      "unrealized_pnl": -25.1594
+      "mark": 4.9045,
+      "unrealized_pnl": -26.5722
     },
     {
       "id": "1792644452583UNI-USDT",
@@ -35,8 +35,8 @@
       "stop": 7.424449500000001,
       "take": 6.8032695,
       "fill_type": "SIMULATED",
-      "mark": 7.0328,
-      "unrealized_pnl": 41.1874
+      "mark": 7.0132,
+      "unrealized_pnl": 45.9313
     },
     {
       "id": "1792644452583AAVE-USDT",
@@ -51,8 +51,8 @@
       "stop": 153.25486721428575,
       "take": 143.07636007142858,
       "fill_type": "SIMULATED",
-      "mark": 147.313,
-      "unrealized_pnl": 30.0922
+      "mark": 147.572,
+      "unrealized_pnl": 26.6277
     }
   ],
   "trades": [
@@ -500,6 +500,10 @@
   ],
   "events": [
     {
+      "time": "2026-10-23T00:33:33+00:00",
+      "message": "Cycle completed; equity 10050.2997"
+    },
+    {
       "time": "2026-10-22T22:00:04+00:00",
       "message": "Cycle completed; equity 10050.4332"
     },
@@ -814,10 +818,6 @@
     {
       "time": "2026-10-15T15:02:14+00:00",
       "message": "Cycle completed; equity 10307.4764"
-    },
-    {
-      "time": "2026-10-15T10:10:58+00:00",
-      "message": "Cycle completed; equity 10346.0135"
     }
   ],
   "equity_curve": [
@@ -1076,14 +1076,18 @@
     {
       "time": "2026-10-22T22:00:04+00:00",
       "equity": 10050.4332
+    },
+    {
+      "time": "2026-10-23T00:33:33+00:00",
+      "equity": 10050.2997
     }
   ],
-  "last_run": "2026-10-22T22:00:04+00:00",
-  "last_market_data": "2026-10-22T22:00:03+00:00",
+  "last_run": "2026-10-23T00:33:33+00:00",
+  "last_market_data": "2026-10-23T00:33:32+00:00",
   "status": "RUNNING",
   "error": null,
-  "day": "2026-10-22",
-  "day_start_equity": 10179.1903,
+  "day": "2026-10-23",
+  "day_start_equity": 10050.4332,
   "halted": false,
-  "run_count": 64
+  "run_count": 65
 }
