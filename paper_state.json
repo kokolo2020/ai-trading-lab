@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 4237.218816740693,
-  "equity": 9996.6751,
+  "equity": 10080.5891,
   "realized_pnl": -8.90999114361879,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 7.424449500000001,
       "take": 6.8032695,
       "fill_type": "SIMULATED",
-      "mark": 7.2111,
-      "unrealized_pnl": -1.968
+      "mark": 7.0949,
+      "unrealized_pnl": 26.1568
     },
     {
       "id": "1792644452583AAVE-USDT",
@@ -35,8 +35,8 @@
       "stop": 153.25486721428575,
       "take": 143.07636007142858,
       "fill_type": "SIMULATED",
-      "mark": 148.624,
-      "unrealized_pnl": 12.5554
+      "mark": 146.952,
+      "unrealized_pnl": 34.9212
     },
     {
       "id": "1792750464581NEAR-USDT",
@@ -51,8 +51,8 @@
       "stop": 5.06423255,
       "take": 4.698817549999999,
       "fill_type": "SIMULATED",
-      "mark": 4.9449,
-      "unrealized_pnl": -5.0023
+      "mark": 4.8624,
+      "unrealized_pnl": 28.4211
     }
   ],
   "trades": [
@@ -521,6 +521,10 @@
   ],
   "events": [
     {
+      "time": "2026-10-23T15:10:29+00:00",
+      "message": "Cycle completed; equity 10080.5891"
+    },
+    {
       "time": "2026-10-23T10:14:24+00:00",
       "message": "Cycle completed; equity 9996.6751"
     },
@@ -835,10 +839,6 @@
     {
       "time": "2026-10-15T22:11:52+00:00",
       "message": "Cycle completed; equity 10206.667"
-    },
-    {
-      "time": "2026-10-15T22:11:52+00:00",
-      "message": "SIM OPEN LONG AAVE-USDT notional 2042.35"
     }
   ],
   "equity_curve": [
@@ -1109,14 +1109,18 @@
     {
       "time": "2026-10-23T10:14:24+00:00",
       "equity": 9996.6751
+    },
+    {
+      "time": "2026-10-23T15:10:29+00:00",
+      "equity": 10080.5891
     }
   ],
-  "last_run": "2026-10-23T10:14:24+00:00",
-  "last_market_data": "2026-10-23T10:14:23+00:00",
+  "last_run": "2026-10-23T15:10:29+00:00",
+  "last_market_data": "2026-10-23T15:10:28+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-23",
   "day_start_equity": 10050.4332,
   "halted": false,
-  "run_count": 67
+  "run_count": 68
 }
