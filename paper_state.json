@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 4968.409381916756,
-  "equity": 10407.8641,
+  "equity": 10392.5972,
   "realized_pnl": 254.53755630186623,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 1.10687825,
       "take": 1.0051332499999996,
       "fill_type": "SIMULATED",
-      "mark": 1.0232,
-      "unrealized_pnl": 72.3075
+      "mark": 1.0243,
+      "unrealized_pnl": 70.6373
     },
     {
       "id": "1792834265150NEAR-USDT",
@@ -35,8 +35,8 @@
       "stop": 4.631902857142858,
       "take": 4.199459285714286,
       "fill_type": "SIMULATED",
-      "mark": 4.4119,
-      "unrealized_pnl": 23.8553
+      "mark": 4.457,
+      "unrealized_pnl": 7.7707
     },
     {
       "id": "1792834265150AAVE-USDT",
@@ -51,8 +51,8 @@
       "stop": 143.37885235714285,
       "take": 134.77442378571428,
       "fill_type": "SIMULATED",
-      "mark": 136.324,
-      "unrealized_pnl": 57.1637
+      "mark": 136.154,
+      "unrealized_pnl": 59.6517
     }
   ],
   "trades": [
@@ -584,6 +584,10 @@
   ],
   "events": [
     {
+      "time": "2026-10-25T12:28:22+00:00",
+      "message": "Cycle completed; equity 10392.5972"
+    },
+    {
       "time": "2026-10-25T06:58:00+00:00",
       "message": "Cycle completed; equity 10407.8641"
     },
@@ -898,10 +902,6 @@
     {
       "time": "2026-10-17T18:46:15+00:00",
       "message": "Cycle completed; equity 10159.9685"
-    },
-    {
-      "time": "2026-10-17T16:30:38+00:00",
-      "message": "Cycle completed; equity 10191.6846"
     }
   ],
   "equity_curve": [
@@ -1224,14 +1224,18 @@
     {
       "time": "2026-10-25T06:58:00+00:00",
       "equity": 10407.8641
+    },
+    {
+      "time": "2026-10-25T12:28:22+00:00",
+      "equity": 10392.5972
     }
   ],
-  "last_run": "2026-10-25T06:58:00+00:00",
-  "last_market_data": "2026-10-25T06:58:00+00:00",
+  "last_run": "2026-10-25T12:28:22+00:00",
+  "last_market_data": "2026-10-25T12:28:21+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-25",
   "day_start_equity": 10300.8583,
   "halted": false,
-  "run_count": 80
+  "run_count": 81
 }
