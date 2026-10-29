@@ -2,10 +2,59 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 10119.17413772561,
-  "equity": 10119.1741,
+  "cash": 6165.501590279431,
+  "equity": 10109.2969,
   "realized_pnl": 119.17413772561385,
-  "positions": [],
+  "positions": [
+    {
+      "id": "1793314796641AAVE-USDT",
+      "symbol": "AAVE-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 10.686086240918193,
+      "entry": 120.1029185,
+      "entry_time": "2026-10-29T22:59:56+00:00",
+      "margin": 1283.430144876969,
+      "entry_fee": 1.2834301448769692,
+      "stop": 124.83766135714286,
+      "take": 110.63343278571428,
+      "fill_type": "SIMULATED",
+      "mark": 120.163,
+      "unrealized_pnl": -3.2095
+    },
+    {
+      "id": "1793314796641NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 267.35442714525635,
+      "entry": 4.111743100000001,
+      "entry_time": "2026-10-29T22:59:56+00:00",
+      "margin": 1099.2927210689606,
+      "entry_fee": 1.0992927210689607,
+      "stop": 4.30098952857143,
+      "take": 3.7332502428571432,
+      "fill_type": "SIMULATED",
+      "mark": 4.1138,
+      "unrealized_pnl": -2.7491
+    },
+    {
+      "id": "1793314796641LINK-USDT",
+      "symbol": "LINK-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 145.72513367113706,
+      "entry": 10.75312075,
+      "entry_time": "2026-10-29T22:59:56+00:00",
+      "margin": 1566.9999586756278,
+      "entry_fee": 1.5669999586756278,
+      "stop": 11.100321464285715,
+      "take": 10.058719321428573,
+      "fill_type": "SIMULATED",
+      "mark": 10.7585,
+      "unrealized_pnl": -3.9187
+    }
+  ],
   "trades": [
     {
       "id": "1793154085932AAVE-USDT",
@@ -724,6 +773,22 @@
   ],
   "events": [
     {
+      "time": "2026-10-29T22:59:56+00:00",
+      "message": "Cycle completed; equity 10109.2969"
+    },
+    {
+      "time": "2026-10-29T22:59:56+00:00",
+      "message": "SIM OPEN SHORT LINK-USDT notional 1567.0"
+    },
+    {
+      "time": "2026-10-29T22:59:56+00:00",
+      "message": "SIM OPEN SHORT NEAR-USDT notional 1099.29"
+    },
+    {
+      "time": "2026-10-29T22:59:56+00:00",
+      "message": "SIM OPEN SHORT AAVE-USDT notional 1283.43"
+    },
+    {
       "time": "2026-10-29T18:44:04+00:00",
       "message": "Cycle completed; equity 10119.1741"
     },
@@ -1026,22 +1091,6 @@
     {
       "time": "2026-10-21T18:01:31+00:00",
       "message": "SIM CLOSE LONG SOL-USDT TARGET PNL 59.1"
-    },
-    {
-      "time": "2026-10-21T13:08:54+00:00",
-      "message": "Cycle completed; equity 10132.9305"
-    },
-    {
-      "time": "2026-10-21T07:29:18+00:00",
-      "message": "Cycle completed; equity 10114.7214"
-    },
-    {
-      "time": "2026-10-21T02:02:17+00:00",
-      "message": "Cycle completed; equity 10088.9248"
-    },
-    {
-      "time": "2026-10-21T02:02:17+00:00",
-      "message": "SIM OPEN LONG NEAR-USDT notional 1091.52"
     }
   ],
   "equity_curve": [
@@ -1456,14 +1505,18 @@
     {
       "time": "2026-10-29T18:44:04+00:00",
       "equity": 10119.1741
+    },
+    {
+      "time": "2026-10-29T22:59:56+00:00",
+      "equity": 10109.2969
     }
   ],
-  "last_run": "2026-10-29T18:44:04+00:00",
-  "last_market_data": "2026-10-29T18:44:02+00:00",
+  "last_run": "2026-10-29T22:59:56+00:00",
+  "last_market_data": "2026-10-29T22:59:54+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-29",
   "day_start_equity": 10282.9309,
   "halted": false,
-  "run_count": 103
+  "run_count": 104
 }
