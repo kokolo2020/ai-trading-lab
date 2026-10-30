@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 6131.259642041524,
-  "equity": 9940.0329,
+  "equity": 9911.1234,
   "realized_pnl": -11.499873034299483,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 11.100321464285715,
       "take": 10.058719321428573,
       "fill_type": "SIMULATED",
-      "mark": 11.0247,
-      "unrealized_pnl": -42.7495
+      "mark": 11.0698,
+      "unrealized_pnl": -49.3283
     },
     {
       "id": "1793350566882UNI-USDT",
@@ -35,8 +35,8 @@
       "stop": 7.098930571428572,
       "take": 5.9400648571428585,
       "fill_type": "SIMULATED",
-      "mark": 6.716,
-      "unrealized_pnl": -2.161
+      "mark": 6.9436,
+      "unrealized_pnl": -31.4903
     },
     {
       "id": "1793350566882BNB-USDT",
@@ -51,8 +51,8 @@
       "stop": 729.7128435000001,
       "take": 655.7551935,
       "fill_type": "SIMULATED",
-      "mark": 705.413,
-      "unrealized_pnl": -3.5567
+      "mark": 701.947,
+      "unrealized_pnl": 3.4419
     }
   ],
   "trades": [
@@ -815,6 +815,10 @@
   ],
   "events": [
     {
+      "time": "2026-10-30T15:40:12+00:00",
+      "message": "Cycle completed; equity 9911.1234"
+    },
+    {
       "time": "2026-10-30T08:56:06+00:00",
       "message": "Cycle completed; equity 9940.0329"
     },
@@ -1129,10 +1133,6 @@
     {
       "time": "2026-10-22T04:47:32+00:00",
       "message": "SIM OPEN SHORT UNI-USDT notional 1745.14"
-    },
-    {
-      "time": "2026-10-22T04:47:31+00:00",
-      "message": "SIM CLOSE LONG UNI-USDT STOP PNL -80.02"
     }
   ],
   "equity_curve": [
@@ -1559,14 +1559,18 @@
     {
       "time": "2026-10-30T08:56:06+00:00",
       "equity": 9940.0329
+    },
+    {
+      "time": "2026-10-30T15:40:12+00:00",
+      "equity": 9911.1234
     }
   ],
-  "last_run": "2026-10-30T08:56:06+00:00",
-  "last_market_data": "2026-10-30T08:56:04+00:00",
+  "last_run": "2026-10-30T15:40:12+00:00",
+  "last_market_data": "2026-10-30T15:40:10+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-30",
   "day_start_equity": 10109.2969,
   "halted": false,
-  "run_count": 106
+  "run_count": 107
 }
