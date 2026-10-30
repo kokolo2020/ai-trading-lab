@@ -2,26 +2,60 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 6165.501590279431,
-  "equity": 10106.7745,
-  "realized_pnl": 119.17413772561385,
+  "cash": 6131.259642041524,
+  "equity": 9940.0329,
+  "realized_pnl": -11.499873034299483,
   "positions": [
     {
-      "id": "1793314796641AAVE-USDT",
-      "symbol": "AAVE-USDT",
+      "id": "1793314796641LINK-USDT",
+      "symbol": "LINK-USDT",
       "side": "SHORT",
       "direction": -1,
-      "qty": 10.686086240918193,
-      "entry": 120.1029185,
+      "qty": 145.72513367113706,
+      "entry": 10.75312075,
       "entry_time": "2026-10-29T22:59:56+00:00",
-      "margin": 1283.430144876969,
-      "entry_fee": 1.2834301448769692,
-      "stop": 124.83766135714286,
-      "take": 110.63343278571428,
+      "margin": 1566.9999586756278,
+      "entry_fee": 1.5669999586756278,
+      "stop": 11.100321464285715,
+      "take": 10.058719321428573,
       "fill_type": "SIMULATED",
-      "mark": 121.663,
-      "unrealized_pnl": -19.2547
+      "mark": 11.0247,
+      "unrealized_pnl": -42.7495
     },
+    {
+      "id": "1793350566882UNI-USDT",
+      "symbol": "UNI-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 128.73472496505207,
+      "entry": 6.712642000000001,
+      "entry_time": "2026-10-30T08:56:06+00:00",
+      "margin": 864.1501216588572,
+      "entry_fee": 0.8641501216588572,
+      "stop": 7.098930571428572,
+      "take": 5.9400648571428585,
+      "fill_type": "SIMULATED",
+      "mark": 6.716,
+      "unrealized_pnl": -2.161
+    },
+    {
+      "id": "1793350566882BNB-USDT",
+      "symbol": "BNB-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 2.017184956525796,
+      "entry": 705.0602935000001,
+      "entry_time": "2026-10-30T08:56:06+00:00",
+      "margin": 1422.2370174918626,
+      "entry_fee": 1.4222370174918626,
+      "stop": 729.7128435000001,
+      "take": 655.7551935,
+      "fill_type": "SIMULATED",
+      "mark": 705.413,
+      "unrealized_pnl": -3.5567
+    }
+  ],
+  "trades": [
     {
       "id": "1793314796641NEAR-USDT",
       "symbol": "NEAR-USDT",
@@ -36,26 +70,34 @@
       "take": 3.7332502428571432,
       "fill_type": "SIMULATED",
       "mark": 4.0854,
-      "unrealized_pnl": 4.8514
+      "unrealized_pnl": 4.8514,
+      "exit": 4.372185,
+      "exit_time": "2026-10-30T08:56:04+00:00",
+      "exit_fee": 1.1689230160480828,
+      "net_pnl": -71.8985,
+      "reason": "STOP"
     },
     {
-      "id": "1793314796641LINK-USDT",
-      "symbol": "LINK-USDT",
+      "id": "1793314796641AAVE-USDT",
+      "symbol": "AAVE-USDT",
       "side": "SHORT",
       "direction": -1,
-      "qty": 145.72513367113706,
-      "entry": 10.75312075,
+      "qty": 10.686086240918193,
+      "entry": 120.1029185,
       "entry_time": "2026-10-29T22:59:56+00:00",
-      "margin": 1566.9999586756278,
-      "entry_fee": 1.5669999586756278,
-      "stop": 11.100321464285715,
-      "take": 10.058719321428573,
+      "margin": 1283.430144876969,
+      "entry_fee": 1.2834301448769692,
+      "stop": 124.83766135714286,
+      "take": 110.63343278571428,
       "fill_type": "SIMULATED",
-      "mark": 10.7179,
-      "unrealized_pnl": 2.0037
-    }
-  ],
-  "trades": [
+      "mark": 121.663,
+      "unrealized_pnl": -19.2547,
+      "exit": 125.3576475,
+      "exit_time": "2026-10-30T08:56:04+00:00",
+      "exit_fee": 1.339582632143623,
+      "net_pnl": -58.7755,
+      "reason": "STOP"
+    },
     {
       "id": "1793154085932AAVE-USDT",
       "symbol": "AAVE-USDT",
@@ -773,6 +815,26 @@
   ],
   "events": [
     {
+      "time": "2026-10-30T08:56:06+00:00",
+      "message": "Cycle completed; equity 9940.0329"
+    },
+    {
+      "time": "2026-10-30T08:56:06+00:00",
+      "message": "SIM OPEN SHORT BNB-USDT notional 1422.24"
+    },
+    {
+      "time": "2026-10-30T08:56:06+00:00",
+      "message": "SIM OPEN SHORT UNI-USDT notional 864.15"
+    },
+    {
+      "time": "2026-10-30T08:56:04+00:00",
+      "message": "SIM CLOSE SHORT NEAR-USDT STOP PNL -71.9"
+    },
+    {
+      "time": "2026-10-30T08:56:04+00:00",
+      "message": "SIM CLOSE SHORT AAVE-USDT STOP PNL -58.78"
+    },
+    {
       "time": "2026-10-30T02:32:02+00:00",
       "message": "Cycle completed; equity 10106.7745"
     },
@@ -1071,26 +1133,6 @@
     {
       "time": "2026-10-22T04:47:31+00:00",
       "message": "SIM CLOSE LONG UNI-USDT STOP PNL -80.02"
-    },
-    {
-      "time": "2026-10-22T00:10:40+00:00",
-      "message": "Cycle completed; equity 10110.3864"
-    },
-    {
-      "time": "2026-10-22T00:10:38+00:00",
-      "message": "SIM CLOSE LONG AAVE-USDT STOP PNL -47.5"
-    },
-    {
-      "time": "2026-10-21T21:34:33+00:00",
-      "message": "Cycle completed; equity 10179.1903"
-    },
-    {
-      "time": "2026-10-21T18:01:33+00:00",
-      "message": "Cycle completed; equity 10190.4775"
-    },
-    {
-      "time": "2026-10-21T18:01:33+00:00",
-      "message": "SIM OPEN LONG AAVE-USDT notional 2039.11"
     }
   ],
   "equity_curve": [
@@ -1513,14 +1555,18 @@
     {
       "time": "2026-10-30T02:32:02+00:00",
       "equity": 10106.7745
+    },
+    {
+      "time": "2026-10-30T08:56:06+00:00",
+      "equity": 9940.0329
     }
   ],
-  "last_run": "2026-10-30T02:32:02+00:00",
-  "last_market_data": "2026-10-30T02:32:00+00:00",
+  "last_run": "2026-10-30T08:56:06+00:00",
+  "last_market_data": "2026-10-30T08:56:04+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-30",
   "day_start_equity": 10109.2969,
   "halted": false,
-  "run_count": 105
+  "run_count": 106
 }
