@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 8208.395866434075,
-  "equity": 9892.0014,
+  "equity": 9883.1828,
   "realized_pnl": -103.7845787183585,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 4.227272878571428,
       "take": 4.610683592857142,
       "fill_type": "SIMULATED",
-      "mark": 4.3529,
-      "unrealized_pnl": -4.2141
+      "mark": 4.3301,
+      "unrealized_pnl": -13.0326
     }
   ],
   "trades": [
@@ -846,6 +846,10 @@
   ],
   "events": [
     {
+      "time": "2026-10-31T08:58:06+00:00",
+      "message": "Cycle completed; equity 9883.1828"
+    },
+    {
       "time": "2026-10-31T02:47:13+00:00",
       "message": "Cycle completed; equity 9892.0014"
     },
@@ -1160,10 +1164,6 @@
     {
       "time": "2026-10-23T05:18:05+00:00",
       "message": "SIM CLOSE LONG NEAR-USDT TIME EXIT PNL -13.22"
-    },
-    {
-      "time": "2026-10-23T00:33:33+00:00",
-      "message": "Cycle completed; equity 10050.2997"
     }
   ],
   "equity_curve": [
@@ -1606,14 +1606,18 @@
     {
       "time": "2026-10-31T02:47:13+00:00",
       "equity": 9892.0014
+    },
+    {
+      "time": "2026-10-31T08:58:06+00:00",
+      "equity": 9883.1828
     }
   ],
-  "last_run": "2026-10-31T02:47:13+00:00",
-  "last_market_data": "2026-10-31T02:47:12+00:00",
+  "last_run": "2026-10-31T08:58:06+00:00",
+  "last_market_data": "2026-10-31T08:58:05+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-10-31",
   "day_start_equity": 9896.2154,
   "halted": false,
-  "run_count": 110
+  "run_count": 111
 }
