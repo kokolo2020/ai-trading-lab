@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 8208.395866434075,
-  "equity": 9933.4253,
+  "equity": 9894.5154,
   "realized_pnl": -103.7845787183585,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 4.227272878571428,
       "take": 4.610683592857142,
       "fill_type": "SIMULATED",
-      "mark": 4.46,
-      "unrealized_pnl": 37.2098
+      "mark": 4.3594,
+      "unrealized_pnl": -1.7
     }
   ],
   "trades": [
@@ -846,6 +846,10 @@
   ],
   "events": [
     {
+      "time": "2026-11-01T08:01:44+00:00",
+      "message": "Cycle completed; equity 9894.5154"
+    },
+    {
       "time": "2026-11-01T01:28:30+00:00",
       "message": "Cycle completed; equity 9933.4253"
     },
@@ -1160,10 +1164,6 @@
     {
       "time": "2026-10-23T19:13:40+00:00",
       "message": "Cycle completed; equity 10123.814"
-    },
-    {
-      "time": "2026-10-23T15:10:29+00:00",
-      "message": "Cycle completed; equity 10080.5891"
     }
   ],
   "equity_curve": [
@@ -1622,14 +1622,18 @@
     {
       "time": "2026-11-01T01:28:30+00:00",
       "equity": 9933.4253
+    },
+    {
+      "time": "2026-11-01T08:01:44+00:00",
+      "equity": 9894.5154
     }
   ],
-  "last_run": "2026-11-01T01:28:30+00:00",
-  "last_market_data": "2026-11-01T01:28:29+00:00",
+  "last_run": "2026-11-01T08:01:44+00:00",
+  "last_market_data": "2026-11-01T08:01:44+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-01",
   "day_start_equity": 9935.1271,
   "halted": false,
-  "run_count": 114
+  "run_count": 115
 }
