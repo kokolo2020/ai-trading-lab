@@ -2,10 +2,44 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 6230.711858134076,
-  "equity": 9873.6037,
-  "realized_pnl": -103.7845787183585,
+  "cash": 5936.184095590626,
+  "equity": 9792.7899,
+  "realized_pnl": -194.77818603327978,
   "positions": [
+    {
+      "id": "1793586029192ETH-USDT",
+      "symbol": "ETH-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 0.8608011767530067,
+      "entry": 2295.197025,
+      "entry_time": "2026-11-02T02:20:29+00:00",
+      "margin": 1975.7083,
+      "entry_fee": 1.9757083,
+      "stop": 2267.668425,
+      "take": 2350.254225,
+      "fill_type": "SIMULATED",
+      "mark": 2290.83,
+      "unrealized_pnl": -7.7068
+    },
+    {
+      "id": "1793612518763NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 457.65977111207513,
+      "entry": 4.1285347,
+      "entry_time": "2026-11-02T09:41:58+00:00",
+      "margin": 1889.4642458302599,
+      "entry_fee": 1.88946424583026,
+      "stop": 4.235573985714286,
+      "take": 3.914456128571429,
+      "fill_type": "SIMULATED",
+      "mark": 4.1306,
+      "unrealized_pnl": -4.7251
+    }
+  ],
+  "trades": [
     {
       "id": "1793414833750NEAR-USDT",
       "symbol": "NEAR-USDT",
@@ -20,26 +54,13 @@
       "take": 4.610683592857142,
       "fill_type": "SIMULATED",
       "mark": 4.3181,
-      "unrealized_pnl": -17.6739
+      "unrealized_pnl": -17.6739,
+      "exit": 4.1285347,
+      "exit_time": "2026-11-02T09:41:58+00:00",
+      "exit_fee": 1.598424371904546,
+      "net_pnl": -90.9936,
+      "reason": "STOP"
     },
-    {
-      "id": "1793586029192ETH-USDT",
-      "symbol": "ETH-USDT",
-      "side": "LONG",
-      "direction": 1,
-      "qty": 0.8608011767530067,
-      "entry": 2295.197025,
-      "entry_time": "2026-11-02T02:20:29+00:00",
-      "margin": 1975.7083,
-      "entry_fee": 1.9757083,
-      "stop": 2267.668425,
-      "take": 2350.254225,
-      "fill_type": "SIMULATED",
-      "mark": 2294.05,
-      "unrealized_pnl": -4.9378
-    }
-  ],
-  "trades": [
     {
       "id": "1793350566882BNB-USDT",
       "symbol": "BNB-USDT",
@@ -862,6 +883,18 @@
   ],
   "events": [
     {
+      "time": "2026-11-02T09:41:58+00:00",
+      "message": "Cycle completed; equity 9792.7899"
+    },
+    {
+      "time": "2026-11-02T09:41:58+00:00",
+      "message": "SIM OPEN SHORT NEAR-USDT notional 1889.46"
+    },
+    {
+      "time": "2026-11-02T09:41:58+00:00",
+      "message": "SIM CLOSE LONG NEAR-USDT STOP PNL -90.99"
+    },
+    {
       "time": "2026-11-02T02:20:29+00:00",
       "message": "Cycle completed; equity 9873.6037"
     },
@@ -1168,18 +1201,6 @@
     {
       "time": "2026-10-24T09:31:05+00:00",
       "message": "SIM OPEN SHORT NEAR-USDT notional 1598.92"
-    },
-    {
-      "time": "2026-10-24T05:08:04+00:00",
-      "message": "Cycle completed; equity 10239.2308"
-    },
-    {
-      "time": "2026-10-24T05:08:03+00:00",
-      "message": "SIM CLOSE SHORT AAVE-USDT TIME EXIT PNL 72.47"
-    },
-    {
-      "time": "2026-10-24T05:08:03+00:00",
-      "message": "SIM CLOSE SHORT UNI-USDT TIME EXIT PNL 57.14"
     }
   ],
   "equity_curve": [
@@ -1658,14 +1679,18 @@
     {
       "time": "2026-11-02T02:20:29+00:00",
       "equity": 9873.6037
+    },
+    {
+      "time": "2026-11-02T09:41:58+00:00",
+      "equity": 9792.7899
     }
   ],
-  "last_run": "2026-11-02T02:20:29+00:00",
-  "last_market_data": "2026-11-02T02:20:28+00:00",
+  "last_run": "2026-11-02T09:41:58+00:00",
+  "last_market_data": "2026-11-02T09:41:58+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-02",
   "day_start_equity": 9855.3735,
   "halted": false,
-  "run_count": 119
+  "run_count": 120
 }
