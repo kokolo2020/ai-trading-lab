@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 4462.740651670591,
-  "equity": 9799.1151,
+  "equity": 9782.1522,
   "realized_pnl": -166.2507108418235,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 3.9691170214285716,
       "take": 3.6152863071428567,
       "fill_type": "SIMULATED",
-      "mark": 3.8545,
-      "unrealized_pnl": -4.6175
+      "mark": 3.856,
+      "unrealized_pnl": -5.2459
     },
     {
       "id": "1793648954764ETH-USDT",
@@ -35,8 +35,8 @@
       "stop": 2265.7006871428575,
       "take": 2180.261115714286,
       "fill_type": "SIMULATED",
-      "mark": 2261.69,
-      "unrealized_pnl": -25.5674
+      "mark": 2254.99,
+      "unrealized_pnl": -19.6481
     },
     {
       "id": "1793670770858UNI-USDT",
@@ -51,8 +51,8 @@
       "stop": 7.195422714285716,
       "take": 6.616645571428571,
       "fill_type": "SIMULATED",
-      "mark": 7.006,
-      "unrealized_pnl": -4.4493
+      "mark": 7.0935,
+      "unrealized_pnl": -26.7031
     }
   ],
   "trades": [
@@ -962,6 +962,10 @@
   ],
   "events": [
     {
+      "time": "2026-11-03T08:54:18+00:00",
+      "message": "Cycle completed; equity 9782.1522"
+    },
+    {
       "time": "2026-11-03T01:52:50+00:00",
       "message": "Cycle completed; equity 9799.1151"
     },
@@ -1276,10 +1280,6 @@
     {
       "time": "2026-10-25T12:28:22+00:00",
       "message": "Cycle completed; equity 10392.5972"
-    },
-    {
-      "time": "2026-10-25T06:58:00+00:00",
-      "message": "Cycle completed; equity 10407.8641"
     }
   ],
   "equity_curve": [
@@ -1770,14 +1770,18 @@
     {
       "time": "2026-11-03T01:52:50+00:00",
       "equity": 9799.1151
+    },
+    {
+      "time": "2026-11-03T08:54:18+00:00",
+      "equity": 9782.1522
     }
   ],
-  "last_run": "2026-11-03T01:52:50+00:00",
-  "last_market_data": "2026-11-03T01:52:50+00:00",
+  "last_run": "2026-11-03T08:54:18+00:00",
+  "last_market_data": "2026-11-03T08:54:17+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-03",
   "day_start_equity": 9859.0274,
   "halted": false,
-  "run_count": 122
+  "run_count": 123
 }
