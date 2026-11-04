@@ -2,26 +2,11 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 3987.980904014612,
-  "equity": 9629.3726,
-  "realized_pnl": -356.4984717320872,
-  "positions": [
-    {
-      "id": "1793758545166NEAR-USDT",
-      "symbol": "NEAR-USDT",
-      "side": "SHORT",
-      "direction": -1,
-      "qty": 474.9256738217353,
-      "entry": 3.77421195,
-      "entry_time": "2026-11-04T02:15:45+00:00",
-      "margin": 1792.4701534997957,
-      "entry_fee": 1.7924701534997958,
-      "stop": 3.875738378571429,
-      "take": 3.571159092857143,
-      "fill_type": "SIMULATED",
-      "mark": 3.7761,
-      "unrealized_pnl": -4.4825
-    },
+  "cash": 9447.58737238421,
+  "equity": 9447.5874,
+  "realized_pnl": -552.4126276157847,
+  "positions": [],
+  "trades": [
     {
       "id": "1793758545166SOL-USDT",
       "symbol": "SOL-USDT",
@@ -35,8 +20,13 @@
       "stop": 93.13119785714287,
       "take": 89.2697692857143,
       "fill_type": "SIMULATED",
-      "mark": 91.89,
-      "unrealized_pnl": -4.8232
+      "mark": 93.03,
+      "unrealized_pnl": -28.7868,
+      "exit": 93.076515,
+      "exit_time": "2026-11-04T09:27:46+00:00",
+      "exit_fee": 1.9545816264695033,
+      "net_pnl": -29.7646,
+      "reason": "DAILY HALT"
     },
     {
       "id": "1793758545166BNB-USDT",
@@ -52,10 +42,34 @@
       "take": 676.1024665,
       "fill_type": "SIMULATED",
       "mark": 693.083,
-      "unrealized_pnl": -4.8232
-    }
-  ],
-  "trades": [
+      "unrealized_pnl": -4.8232,
+      "exit": 701.8837665,
+      "exit_time": "2026-11-04T09:27:46+00:00",
+      "exit_fee": 1.9541680164271014,
+      "net_pnl": -29.3506,
+      "reason": "STOP"
+    },
+    {
+      "id": "1793758545166NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 474.9256738217353,
+      "entry": 3.77421195,
+      "entry_time": "2026-11-04T02:15:45+00:00",
+      "margin": 1792.4701534997957,
+      "entry_fee": 1.7924701534997958,
+      "stop": 3.875738378571429,
+      "take": 3.571159092857143,
+      "fill_type": "SIMULATED",
+      "mark": 3.7761,
+      "unrealized_pnl": -4.4825,
+      "exit": 4.054426199999999,
+      "exit_time": "2026-11-04T09:27:46+00:00",
+      "exit_fee": 1.9255510949954975,
+      "net_pnl": -136.799,
+      "reason": "STOP"
+    },
     {
       "id": "1793724580614UNI-USDT",
       "symbol": "UNI-USDT",
@@ -1046,6 +1060,22 @@
   ],
   "events": [
     {
+      "time": "2026-11-04T09:27:46+00:00",
+      "message": "Cycle completed; equity 9447.5874"
+    },
+    {
+      "time": "2026-11-04T09:27:46+00:00",
+      "message": "SIM CLOSE SHORT SOL-USDT DAILY HALT PNL -29.76"
+    },
+    {
+      "time": "2026-11-04T09:27:46+00:00",
+      "message": "SIM CLOSE SHORT BNB-USDT STOP PNL -29.35"
+    },
+    {
+      "time": "2026-11-04T09:27:46+00:00",
+      "message": "SIM CLOSE SHORT NEAR-USDT STOP PNL -136.8"
+    },
+    {
       "time": "2026-11-04T02:15:45+00:00",
       "message": "Cycle completed; equity 9629.3726"
     },
@@ -1348,22 +1378,6 @@
     {
       "time": "2026-10-26T23:44:24+00:00",
       "message": "Cycle completed; equity 10359.3182"
-    },
-    {
-      "time": "2026-10-26T19:59:20+00:00",
-      "message": "Cycle completed; equity 10369.5234"
-    },
-    {
-      "time": "2026-10-26T14:13:37+00:00",
-      "message": "Cycle completed; equity 10355.4772"
-    },
-    {
-      "time": "2026-10-26T14:13:37+00:00",
-      "message": "SIM OPEN SHORT BTC-USDT notional 2073.17"
-    },
-    {
-      "time": "2026-10-26T14:13:37+00:00",
-      "message": "SIM OPEN SHORT ETH-USDT notional 2073.17"
     }
   ],
   "equity_curve": [
@@ -1870,14 +1884,18 @@
     {
       "time": "2026-11-04T02:15:45+00:00",
       "equity": 9629.3726
+    },
+    {
+      "time": "2026-11-04T09:27:46+00:00",
+      "equity": 9447.5874
     }
   ],
-  "last_run": "2026-11-04T02:15:45+00:00",
-  "last_market_data": "2026-11-04T02:15:43+00:00",
+  "last_run": "2026-11-04T09:27:46+00:00",
+  "last_market_data": "2026-11-04T09:27:46+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-04",
   "day_start_equity": 9643.5015,
-  "halted": false,
-  "run_count": 126
+  "halted": true,
+  "run_count": 127
 }
