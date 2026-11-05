@@ -1060,6 +1060,10 @@
   ],
   "events": [
     {
+      "time": "2026-11-05T02:53:32+00:00",
+      "message": "Cycle completed; equity 9447.5874"
+    },
+    {
       "time": "2026-11-04T22:47:11+00:00",
       "message": "Cycle completed; equity 9447.5874"
     },
@@ -1374,10 +1378,6 @@
     {
       "time": "2026-10-27T14:40:51+00:00",
       "message": "Cycle completed; equity 10391.2949"
-    },
-    {
-      "time": "2026-10-27T08:18:06+00:00",
-      "message": "Cycle completed; equity 10406.8858"
     }
   ],
   "equity_curve": [
@@ -1896,14 +1896,18 @@
     {
       "time": "2026-11-04T22:47:11+00:00",
       "equity": 9447.5874
+    },
+    {
+      "time": "2026-11-05T02:53:32+00:00",
+      "equity": 9447.5874
     }
   ],
-  "last_run": "2026-11-04T22:47:11+00:00",
-  "last_market_data": "2026-11-04T22:47:11+00:00",
+  "last_run": "2026-11-05T02:53:32+00:00",
+  "last_market_data": "2026-11-05T02:53:30+00:00",
   "status": "RUNNING",
   "error": null,
-  "day": "2026-11-04",
-  "day_start_equity": 9643.5015,
-  "halted": true,
-  "run_count": 129
+  "day": "2026-11-05",
+  "day_start_equity": 9447.5874,
+  "halted": false,
+  "run_count": 130
 }
