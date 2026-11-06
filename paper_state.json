@@ -2,26 +2,10 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 4665.566915258379,
-  "equity": 9325.6578,
-  "realized_pnl": -552.4126276157847,
+  "cash": 4397.609441102963,
+  "equity": 9302.6356,
+  "realized_pnl": -617.9537724281978,
   "positions": [
-    {
-      "id": "1793901993207SUI-USDT",
-      "symbol": "SUI-USDT",
-      "side": "SHORT",
-      "direction": -1,
-      "qty": 1969.7129352196553,
-      "entry": 0.8423786000000001,
-      "entry_time": "2026-11-05T18:06:33+00:00",
-      "margin": 1659.244024772224,
-      "entry_fee": 1.659244024772224,
-      "stop": 0.8663607428571429,
-      "take": 0.7944143142857143,
-      "fill_type": "SIMULATED",
-      "mark": 0.8657,
-      "unrealized_pnl": -49.3009
-    },
     {
       "id": "1793901993207NEAR-USDT",
       "symbol": "NEAR-USDT",
@@ -35,8 +19,8 @@
       "stop": 3.793584721428572,
       "take": 3.410429007142857,
       "fill_type": "SIMULATED",
-      "mark": 3.7379,
-      "unrealized_pnl": -29.3808
+      "mark": 3.7436,
+      "unrealized_pnl": -31.4911
     },
     {
       "id": "1793901993207LINK-USDT",
@@ -51,11 +35,48 @@
       "stop": 10.920893735714287,
       "take": 10.065550878571429,
       "fill_type": "SIMULATED",
-      "mark": 10.8753,
-      "unrealized_pnl": -43.2479
+      "mark": 10.8754,
+      "unrealized_pnl": -43.2645
+    },
+    {
+      "id": "1793989270135SOL-USDT",
+      "symbol": "SOL-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 20.642754762439964,
+      "entry": 90.17489,
+      "entry_time": "2026-11-06T18:21:10+00:00",
+      "margin": 1861.45814,
+      "entry_fee": 1.86145814,
+      "stop": 91.58346142857144,
+      "take": 87.35774714285715,
+      "fill_type": "SIMULATED",
+      "mark": 90.22,
+      "unrealized_pnl": -4.655
     }
   ],
   "trades": [
+    {
+      "id": "1793901993207SUI-USDT",
+      "symbol": "SUI-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 1969.7129352196553,
+      "entry": 0.8423786000000001,
+      "entry_time": "2026-11-05T18:06:33+00:00",
+      "margin": 1659.244024772224,
+      "entry_fee": 1.659244024772224,
+      "stop": 0.8663607428571429,
+      "take": 0.7944143142857143,
+      "fill_type": "SIMULATED",
+      "mark": 0.8657,
+      "unrealized_pnl": -49.3009,
+      "exit": 0.87393675,
+      "exit_time": "2026-11-06T18:21:09+00:00",
+      "exit_fee": 1.721404521038826,
+      "net_pnl": -65.5411,
+      "reason": "STOP"
+    },
     {
       "id": "1793758545166SOL-USDT",
       "symbol": "SOL-USDT",
@@ -1109,6 +1130,18 @@
   ],
   "events": [
     {
+      "time": "2026-11-06T18:21:10+00:00",
+      "message": "Cycle completed; equity 9302.6356"
+    },
+    {
+      "time": "2026-11-06T18:21:10+00:00",
+      "message": "SIM OPEN SHORT SOL-USDT notional 1861.46"
+    },
+    {
+      "time": "2026-11-06T18:21:09+00:00",
+      "message": "SIM CLOSE SHORT SUI-USDT STOP PNL -65.54"
+    },
+    {
       "time": "2026-11-06T11:30:24+00:00",
       "message": "Cycle completed; equity 9325.6578"
     },
@@ -1415,18 +1448,6 @@
     {
       "time": "2026-10-28T15:30:15+00:00",
       "message": "Cycle completed; equity 10262.6895"
-    },
-    {
-      "time": "2026-10-28T15:30:15+00:00",
-      "message": "SIM OPEN SHORT UNI-USDT notional 2053.56"
-    },
-    {
-      "time": "2026-10-28T08:45:58+00:00",
-      "message": "Cycle completed; equity 10364.6384"
-    },
-    {
-      "time": "2026-10-28T08:45:56+00:00",
-      "message": "SIM CLOSE SHORT DOT-USDT TIME EXIT PNL -11.64"
     }
   ],
   "equity_curve": [
@@ -1969,14 +1990,18 @@
     {
       "time": "2026-11-06T11:30:24+00:00",
       "equity": 9325.6578
+    },
+    {
+      "time": "2026-11-06T18:21:10+00:00",
+      "equity": 9302.6356
     }
   ],
-  "last_run": "2026-11-06T11:30:24+00:00",
-  "last_market_data": "2026-11-06T11:30:23+00:00",
+  "last_run": "2026-11-06T18:21:10+00:00",
+  "last_market_data": "2026-11-06T18:21:09+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-06",
   "day_start_equity": 9433.5557,
   "halted": false,
-  "run_count": 135
+  "run_count": 136
 }
