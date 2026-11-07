@@ -2,26 +2,28 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 4397.609441102963,
-  "equity": 9346.2761,
-  "realized_pnl": -617.9537724281978,
+  "cash": 7484.122525365814,
+  "equity": 9354.1519,
+  "realized_pnl": -652.5578764941814,
   "positions": [
     {
-      "id": "1793901993207NEAR-USDT",
-      "symbol": "NEAR-USDT",
+      "id": "1793989270135SOL-USDT",
+      "symbol": "SOL-USDT",
       "side": "SHORT",
       "direction": -1,
-      "qty": 369.8595785376325,
-      "entry": 3.6658661500000003,
-      "entry_time": "2026-11-05T18:06:33+00:00",
-      "margin": 1355.8557092143735,
-      "entry_fee": 1.3558557092143735,
-      "stop": 3.793584721428572,
-      "take": 3.410429007142857,
+      "qty": 20.642754762439964,
+      "entry": 90.17489,
+      "entry_time": "2026-11-06T18:21:10+00:00",
+      "margin": 1861.45814,
+      "entry_fee": 1.86145814,
+      "stop": 91.58346142857144,
+      "take": 87.35774714285715,
       "fill_type": "SIMULATED",
-      "mark": 3.6806,
-      "unrealized_pnl": -8.1666
-    },
+      "mark": 89.67,
+      "unrealized_pnl": 6.7098
+    }
+  ],
+  "trades": [
     {
       "id": "1793901993207LINK-USDT",
       "symbol": "LINK-USDT",
@@ -36,26 +38,34 @@
       "take": 10.065550878571429,
       "fill_type": "SIMULATED",
       "mark": 10.8451,
-      "unrealized_pnl": -38.2393
+      "unrealized_pnl": -38.2393,
+      "exit": 10.842418499999999,
+      "exit_time": "2026-11-07T20:00:01+00:00",
+      "exit_fee": 1.796379584234109,
+      "net_pnl": -37.7946,
+      "reason": "TIME EXIT"
     },
     {
-      "id": "1793989270135SOL-USDT",
-      "symbol": "SOL-USDT",
+      "id": "1793901993207NEAR-USDT",
+      "symbol": "NEAR-USDT",
       "side": "SHORT",
       "direction": -1,
-      "qty": 20.642754762439964,
-      "entry": 90.17489,
-      "entry_time": "2026-11-06T18:21:10+00:00",
-      "margin": 1861.45814,
-      "entry_fee": 1.86145814,
-      "stop": 91.58346142857144,
-      "take": 87.35774714285715,
+      "qty": 369.8595785376325,
+      "entry": 3.6658661500000003,
+      "entry_time": "2026-11-05T18:06:33+00:00",
+      "margin": 1355.8557092143735,
+      "entry_fee": 1.3558557092143735,
+      "stop": 3.793584721428572,
+      "take": 3.410429007142857,
       "fill_type": "SIMULATED",
-      "mark": 89.48,
-      "unrealized_pnl": 10.6359
-    }
-  ],
-  "trades": [
+      "mark": 3.6806,
+      "unrealized_pnl": -8.1666,
+      "exit": 3.6499240499999996,
+      "exit_time": "2026-11-07T20:00:01+00:00",
+      "exit_fee": 1.3499593708273685,
+      "net_pnl": 3.1905,
+      "reason": "TIME EXIT"
+    },
     {
       "id": "1793901993207SUI-USDT",
       "symbol": "SUI-USDT",
@@ -1130,6 +1140,18 @@
   ],
   "events": [
     {
+      "time": "2026-11-07T20:00:02+00:00",
+      "message": "Cycle completed; equity 9354.1519"
+    },
+    {
+      "time": "2026-11-07T20:00:01+00:00",
+      "message": "SIM CLOSE SHORT LINK-USDT TIME EXIT PNL -37.79"
+    },
+    {
+      "time": "2026-11-07T20:00:01+00:00",
+      "message": "SIM CLOSE SHORT NEAR-USDT TIME EXIT PNL 3.19"
+    },
+    {
       "time": "2026-11-07T15:56:40+00:00",
       "message": "Cycle completed; equity 9346.2761"
     },
@@ -1436,18 +1458,6 @@
     {
       "time": "2026-10-29T12:52:04+00:00",
       "message": "Cycle completed; equity 10119.1741"
-    },
-    {
-      "time": "2026-10-29T06:03:36+00:00",
-      "message": "Cycle completed; equity 10119.1741"
-    },
-    {
-      "time": "2026-10-29T06:03:34+00:00",
-      "message": "SIM CLOSE LONG AAVE-USDT STOP PNL -65.14"
-    },
-    {
-      "time": "2026-10-29T06:03:34+00:00",
-      "message": "SIM CLOSE LONG NEAR-USDT STOP PNL -65.69"
     }
   ],
   "equity_curve": [
@@ -2010,14 +2020,18 @@
     {
       "time": "2026-11-07T15:56:40+00:00",
       "equity": 9346.2761
+    },
+    {
+      "time": "2026-11-07T20:00:02+00:00",
+      "equity": 9354.1519
     }
   ],
-  "last_run": "2026-11-07T15:56:40+00:00",
-  "last_market_data": "2026-11-07T15:56:40+00:00",
+  "last_run": "2026-11-07T20:00:02+00:00",
+  "last_market_data": "2026-11-07T20:00:01+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-07",
   "day_start_equity": 9322.148,
   "halted": false,
-  "run_count": 140
+  "run_count": 141
 }
