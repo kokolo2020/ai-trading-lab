@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 7484.122525365814,
-  "equity": 9370.476,
+  "equity": 9363.2438,
   "realized_pnl": -652.5578764941814,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 91.58346142857144,
       "take": 87.35774714285715,
       "fill_type": "SIMULATED",
-      "mark": 88.88,
-      "unrealized_pnl": 23.0339
+      "mark": 89.23,
+      "unrealized_pnl": 15.8017
     }
   ],
   "trades": [
@@ -1140,6 +1140,10 @@
   ],
   "events": [
     {
+      "time": "2026-11-08T09:31:03+00:00",
+      "message": "Cycle completed; equity 9363.2438"
+    },
+    {
       "time": "2026-11-08T02:41:34+00:00",
       "message": "Cycle completed; equity 9370.476"
     },
@@ -1454,10 +1458,6 @@
     {
       "time": "2026-10-29T22:59:56+00:00",
       "message": "SIM OPEN SHORT NEAR-USDT notional 1099.29"
-    },
-    {
-      "time": "2026-10-29T22:59:56+00:00",
-      "message": "SIM OPEN SHORT AAVE-USDT notional 1283.43"
     }
   ],
   "equity_curve": [
@@ -2032,14 +2032,18 @@
     {
       "time": "2026-11-08T02:41:34+00:00",
       "equity": 9370.476
+    },
+    {
+      "time": "2026-11-08T09:31:03+00:00",
+      "equity": 9363.2438
     }
   ],
-  "last_run": "2026-11-08T02:41:34+00:00",
-  "last_market_data": "2026-11-08T02:41:34+00:00",
+  "last_run": "2026-11-08T09:31:03+00:00",
+  "last_market_data": "2026-11-08T09:31:02+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-08",
   "day_start_equity": 9357.8714,
   "halted": false,
-  "run_count": 143
+  "run_count": 144
 }
