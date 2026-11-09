@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 3737.907689018901,
-  "equity": 9366.0709,
+  "equity": 9293.632,
   "realized_pnl": -641.1925865410952,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 2164.7350392857143,
       "take": 2040.3933964285714,
       "fill_type": "SIMULATED",
-      "mark": 2130.93,
-      "unrealized_pnl": -10.4871
+      "mark": 2146.36,
+      "unrealized_pnl": -24.1029
     },
     {
       "id": "1794182417662XRP-USDT",
@@ -35,8 +35,8 @@
       "stop": 1.1334545150000002,
       "take": 1.067333015,
       "fill_type": "SIMULATED",
-      "mark": 1.09473,
-      "unrealized_pnl": 24.3826
+      "mark": 1.11342,
+      "unrealized_pnl": -7.1252
     },
     {
       "id": "1794182417662SOL-USDT",
@@ -51,8 +51,8 @@
       "stop": 88.10369357142858,
       "take": 83.07290785714287,
       "fill_type": "SIMULATED",
-      "mark": 86.56,
-      "unrealized_pnl": -6.6319
+      "mark": 87.82,
+      "unrealized_pnl": -33.9473
     }
   ],
   "trades": [
@@ -1193,6 +1193,10 @@
   ],
   "events": [
     {
+      "time": "2026-11-09T16:02:18+00:00",
+      "message": "Cycle completed; equity 9293.632"
+    },
+    {
       "time": "2026-11-09T06:02:14+00:00",
       "message": "Cycle completed; equity 9366.0709"
     },
@@ -1507,10 +1511,6 @@
     {
       "time": "2026-10-30T15:40:12+00:00",
       "message": "Cycle completed; equity 9911.1234"
-    },
-    {
-      "time": "2026-10-30T08:56:06+00:00",
-      "message": "Cycle completed; equity 9940.0329"
     }
   ],
   "equity_curve": [
@@ -2105,14 +2105,18 @@
     {
       "time": "2026-11-09T06:02:14+00:00",
       "equity": 9366.0709
+    },
+    {
+      "time": "2026-11-09T16:02:18+00:00",
+      "equity": 9293.632
     }
   ],
-  "last_run": "2026-11-09T06:02:14+00:00",
-  "last_market_data": "2026-11-09T06:02:14+00:00",
+  "last_run": "2026-11-09T16:02:18+00:00",
+  "last_market_data": "2026-11-09T16:02:18+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-09",
   "day_start_equity": 9358.8074,
   "halted": false,
-  "run_count": 148
+  "run_count": 149
 }
