@@ -2,26 +2,44 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 3932.5881560845773,
-  "equity": 9613.7663,
-  "realized_pnl": -371.7714208297369,
+  "cash": 5804.240969729726,
+  "equity": 9627.8666,
+  "realized_pnl": -341.65707857027047,
   "positions": [
     {
-      "id": "1794325255572NEAR-USDT",
-      "symbol": "NEAR-USDT",
+      "id": "1794383982033LTC-USDT",
+      "symbol": "LTC-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 37.87244665229112,
+      "entry": 50.79459000000001,
+      "entry_time": "2026-11-11T07:59:42+00:00",
+      "margin": 1923.7154,
+      "entry_fee": 1.9237154,
+      "stop": 51.508590000000005,
+      "take": 49.36659000000001,
+      "fill_type": "SIMULATED",
+      "mark": 51.37,
+      "unrealized_pnl": -25.6614
+    },
+    {
+      "id": "1794413015393SOL-USDT",
+      "symbol": "SOL-USDT",
       "side": "LONG",
       "direction": 1,
-      "qty": 516.1521569648567,
-      "entry": 3.5659821,
-      "entry_time": "2026-11-10T15:40:55+00:00",
-      "margin": 1840.589352613069,
-      "entry_fee": 1.840589352613069,
-      "stop": 3.4727128142857144,
-      "take": 3.752520671428571,
+      "qty": 22.715270888797672,
+      "entry": 84.81238499999999,
+      "entry_time": "2026-11-11T16:03:35+00:00",
+      "margin": 1926.5363000000002,
+      "entry_fee": 1.9265363000000002,
+      "stop": 83.39288499999999,
+      "take": 87.65138499999999,
       "fill_type": "SIMULATED",
-      "mark": 3.6294,
-      "unrealized_pnl": 29.0194
-    },
+      "mark": 84.77,
+      "unrealized_pnl": -4.8149
+    }
+  ],
+  "trades": [
     {
       "id": "1794325255572XRP-USDT",
       "symbol": "XRP-USDT",
@@ -36,26 +54,34 @@
       "take": 0.999899207142857,
       "fill_type": "SIMULATED",
       "mark": 1.05958,
-      "unrealized_pnl": -38.671
+      "unrealized_pnl": -38.671,
+      "exit": 1.072666065,
+      "exit_time": "2026-11-11T16:03:34+00:00",
+      "exit_fee": 1.984642390393787,
+      "net_pnl": -62.907,
+      "reason": "STOP"
     },
     {
-      "id": "1794383982033LTC-USDT",
-      "symbol": "LTC-USDT",
-      "side": "SHORT",
-      "direction": -1,
-      "qty": 37.87244665229112,
-      "entry": 50.79459000000001,
-      "entry_time": "2026-11-11T07:59:42+00:00",
-      "margin": 1923.7154,
-      "entry_fee": 1.9237154,
-      "stop": 51.508590000000005,
-      "take": 49.36659000000001,
+      "id": "1794325255572NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 516.1521569648567,
+      "entry": 3.5659821,
+      "entry_time": "2026-11-10T15:40:55+00:00",
+      "margin": 1840.589352613069,
+      "entry_fee": 1.840589352613069,
+      "stop": 3.4727128142857144,
+      "take": 3.752520671428571,
       "fill_type": "SIMULATED",
-      "mark": 50.82,
-      "unrealized_pnl": -4.8107
-    }
-  ],
-  "trades": [
+      "mark": 3.6294,
+      "unrealized_pnl": 29.0194,
+      "exit": 3.7535223,
+      "exit_time": "2026-11-11T16:03:34+00:00",
+      "exit_fee": 1.93738863136069,
+      "net_pnl": 93.0213,
+      "reason": "TARGET"
+    },
     {
       "id": "1794182417662SOL-USDT",
       "symbol": "SOL-USDT",
@@ -1256,6 +1282,22 @@
   ],
   "events": [
     {
+      "time": "2026-11-11T16:03:35+00:00",
+      "message": "Cycle completed; equity 9627.8666"
+    },
+    {
+      "time": "2026-11-11T16:03:35+00:00",
+      "message": "SIM OPEN LONG SOL-USDT notional 1926.54"
+    },
+    {
+      "time": "2026-11-11T16:03:34+00:00",
+      "message": "SIM CLOSE SHORT XRP-USDT STOP PNL -62.91"
+    },
+    {
+      "time": "2026-11-11T16:03:34+00:00",
+      "message": "SIM CLOSE LONG NEAR-USDT TARGET PNL 93.02"
+    },
+    {
       "time": "2026-11-11T07:59:42+00:00",
       "message": "Cycle completed; equity 9613.7663"
     },
@@ -1558,22 +1600,6 @@
     {
       "time": "2026-11-01T22:59:30+00:00",
       "message": "Cycle completed; equity 9855.3735"
-    },
-    {
-      "time": "2026-11-01T19:29:52+00:00",
-      "message": "Cycle completed; equity 9856.0697"
-    },
-    {
-      "time": "2026-11-01T14:58:48+00:00",
-      "message": "Cycle completed; equity 9901.1293"
-    },
-    {
-      "time": "2026-11-01T08:01:44+00:00",
-      "message": "Cycle completed; equity 9894.5154"
-    },
-    {
-      "time": "2026-11-01T01:28:30+00:00",
-      "message": "Cycle completed; equity 9933.4253"
     }
   ],
   "equity_curve": [
@@ -2196,14 +2222,18 @@
     {
       "time": "2026-11-11T07:59:42+00:00",
       "equity": 9613.7663
+    },
+    {
+      "time": "2026-11-11T16:03:35+00:00",
+      "equity": 9627.8666
     }
   ],
-  "last_run": "2026-11-11T07:59:42+00:00",
-  "last_market_data": "2026-11-11T07:59:41+00:00",
+  "last_run": "2026-11-11T16:03:35+00:00",
+  "last_market_data": "2026-11-11T16:03:34+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-11",
   "day_start_equity": 9574.7439,
   "halted": false,
-  "run_count": 155
+  "run_count": 156
 }
