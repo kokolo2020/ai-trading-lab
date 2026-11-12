@@ -2,10 +2,11 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 7691.090774732638,
-  "equity": 9645.2802,
-  "realized_pnl": -383.27010986735837,
-  "positions": [
+  "cash": 9670.504817501864,
+  "equity": 9670.5048,
+  "realized_pnl": -329.49518249813264,
+  "positions": [],
+  "trades": [
     {
       "id": "1794383982033LTC-USDT",
       "symbol": "LTC-USDT",
@@ -20,10 +21,13 @@
       "take": 49.36659000000001,
       "fill_type": "SIMULATED",
       "mark": 49.94,
-      "unrealized_pnl": 28.5503
-    }
-  ],
-  "trades": [
+      "unrealized_pnl": 28.5503,
+      "exit": 49.274625,
+      "exit_time": "2026-11-12T11:35:27+00:00",
+      "exit_fee": 1.8661506066241502,
+      "net_pnl": 53.7749,
+      "reason": "TARGET"
+    },
     {
       "id": "1794413015393SOL-USDT",
       "symbol": "SOL-USDT",
@@ -1287,6 +1291,14 @@
   ],
   "events": [
     {
+      "time": "2026-11-12T11:35:28+00:00",
+      "message": "Cycle completed; equity 9670.5048"
+    },
+    {
+      "time": "2026-11-12T11:35:27+00:00",
+      "message": "SIM CLOSE SHORT LTC-USDT TARGET PNL 53.77"
+    },
+    {
       "time": "2026-11-12T03:22:04+00:00",
       "message": "Cycle completed; equity 9645.2802"
     },
@@ -1597,14 +1609,6 @@
     {
       "time": "2026-11-02T09:41:58+00:00",
       "message": "Cycle completed; equity 9792.7899"
-    },
-    {
-      "time": "2026-11-02T09:41:58+00:00",
-      "message": "SIM OPEN SHORT NEAR-USDT notional 1889.46"
-    },
-    {
-      "time": "2026-11-02T09:41:58+00:00",
-      "message": "SIM CLOSE LONG NEAR-USDT STOP PNL -90.99"
     }
   ],
   "equity_curve": [
@@ -2239,14 +2243,18 @@
     {
       "time": "2026-11-12T03:22:04+00:00",
       "equity": 9645.2802
+    },
+    {
+      "time": "2026-11-12T11:35:28+00:00",
+      "equity": 9670.5048
     }
   ],
-  "last_run": "2026-11-12T03:22:04+00:00",
-  "last_market_data": "2026-11-12T03:22:03+00:00",
+  "last_run": "2026-11-12T11:35:28+00:00",
+  "last_market_data": "2026-11-12T11:35:27+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-12",
   "day_start_equity": 9650.2739,
   "halted": false,
-  "run_count": 158
+  "run_count": 159
 }
