@@ -2,10 +2,27 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 9992.292835656483,
-  "equity": 9992.2928,
+  "cash": 7991.835817096482,
+  "equity": 9987.2952,
   "realized_pnl": -7.7071643435135115,
-  "positions": [],
+  "positions": [
+    {
+      "id": "1794855367623SOL-USDT",
+      "symbol": "SOL-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 28.00754011968864,
+      "entry": 71.35430500000001,
+      "entry_time": "2026-11-16T18:56:07+00:00",
+      "margin": 1998.45856,
+      "entry_fee": 1.99845856,
+      "stop": 73.00087642857143,
+      "take": 68.06116214285716,
+      "fill_type": "SIMULATED",
+      "mark": 71.39,
+      "unrealized_pnl": -4.9976
+    }
+  ],
   "trades": [
     {
       "id": "1794698863840XRP-USDT",
@@ -1480,6 +1497,14 @@
   ],
   "events": [
     {
+      "time": "2026-11-16T18:56:07+00:00",
+      "message": "Cycle completed; equity 9987.2952"
+    },
+    {
+      "time": "2026-11-16T18:56:07+00:00",
+      "message": "SIM OPEN SHORT SOL-USDT notional 1998.46"
+    },
+    {
       "time": "2026-11-16T08:39:27+00:00",
       "message": "Cycle completed; equity 9992.2928"
     },
@@ -1790,14 +1815,6 @@
     {
       "time": "2026-11-06T11:30:24+00:00",
       "message": "Cycle completed; equity 9325.6578"
-    },
-    {
-      "time": "2026-11-06T03:38:53+00:00",
-      "message": "Cycle completed; equity 9363.9343"
-    },
-    {
-      "time": "2026-11-05T23:36:11+00:00",
-      "message": "Cycle completed; equity 9433.5557"
     }
   ],
   "equity_curve": [
@@ -2500,14 +2517,18 @@
     {
       "time": "2026-11-16T08:39:27+00:00",
       "equity": 9992.2928
+    },
+    {
+      "time": "2026-11-16T18:56:07+00:00",
+      "equity": 9987.2952
     }
   ],
-  "last_run": "2026-11-16T08:39:27+00:00",
-  "last_market_data": "2026-11-16T08:39:26+00:00",
+  "last_run": "2026-11-16T18:56:07+00:00",
+  "last_market_data": "2026-11-16T18:56:06+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-16",
   "day_start_equity": 9992.2928,
   "halted": false,
-  "run_count": 175
+  "run_count": 176
 }
