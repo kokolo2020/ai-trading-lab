@@ -2,10 +2,60 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 7991.835817096482,
-  "equity": 9953.3722,
-  "realized_pnl": -7.7071643435135115,
+  "cash": 4564.274744597455,
+  "equity": 9888.2588,
+  "realized_pnl": -98.4152268205343,
   "positions": [
+    {
+      "id": "1794966710859NEAR-USDT",
+      "symbol": "NEAR-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 421.0164346283744,
+      "entry": 3.3717850499999997,
+      "entry_time": "2026-11-18T01:51:50+00:00",
+      "margin": 1419.5769200842549,
+      "entry_fee": 1.419576920084255,
+      "stop": 3.254193621428571,
+      "take": 3.606967907142857,
+      "fill_type": "SIMULATED",
+      "mark": 3.3701,
+      "unrealized_pnl": -3.5479
+    },
+    {
+      "id": "1794966710859SOL-USDT",
+      "symbol": "SOL-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 25.952407084285053,
+      "entry": 74.447205,
+      "entry_time": "2026-11-18T01:51:50+00:00",
+      "margin": 1932.0841704472216,
+      "entry_fee": 1.9320841704472216,
+      "stop": 72.53956214285714,
+      "take": 78.2624907142857,
+      "fill_type": "SIMULATED",
+      "mark": 74.41,
+      "unrealized_pnl": -4.8288
+    },
+    {
+      "id": "1794966710859XRP-USDT",
+      "symbol": "XRP-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 2028.4773013638708,
+      "entry": 0.976257885,
+      "entry_time": "2026-11-18T01:51:50+00:00",
+      "margin": 1980.31696,
+      "entry_fee": 1.9803169600000001,
+      "stop": 0.9555166707142857,
+      "take": 1.0177403135714285,
+      "fill_type": "SIMULATED",
+      "mark": 0.97577,
+      "unrealized_pnl": -4.9493
+    }
+  ],
+  "trades": [
     {
       "id": "1794855367623SOL-USDT",
       "symbol": "SOL-USDT",
@@ -20,10 +70,13 @@
       "take": 68.06116214285716,
       "fill_type": "SIMULATED",
       "mark": 72.6,
-      "unrealized_pnl": -38.9207
-    }
-  ],
-  "trades": [
+      "unrealized_pnl": -38.9207,
+      "exit": 74.447205,
+      "exit_time": "2026-11-18T01:51:49+00:00",
+      "exit_fee": 2.085083080836185,
+      "net_pnl": -90.7081,
+      "reason": "STOP"
+    },
     {
       "id": "1794698863840XRP-USDT",
       "symbol": "XRP-USDT",
@@ -1497,6 +1550,26 @@
   ],
   "events": [
     {
+      "time": "2026-11-18T01:51:50+00:00",
+      "message": "Cycle completed; equity 9888.2588"
+    },
+    {
+      "time": "2026-11-18T01:51:50+00:00",
+      "message": "SIM OPEN LONG XRP-USDT notional 1980.32"
+    },
+    {
+      "time": "2026-11-18T01:51:50+00:00",
+      "message": "SIM OPEN LONG SOL-USDT notional 1932.08"
+    },
+    {
+      "time": "2026-11-18T01:51:50+00:00",
+      "message": "SIM OPEN LONG NEAR-USDT notional 1419.58"
+    },
+    {
+      "time": "2026-11-18T01:51:49+00:00",
+      "message": "SIM CLOSE SHORT SOL-USDT STOP PNL -90.71"
+    },
+    {
       "time": "2026-11-17T19:37:15+00:00",
       "message": "Cycle completed; equity 9953.3722"
     },
@@ -1795,26 +1868,6 @@
     {
       "time": "2026-11-07T20:00:01+00:00",
       "message": "SIM CLOSE SHORT NEAR-USDT TIME EXIT PNL 3.19"
-    },
-    {
-      "time": "2026-11-07T15:56:40+00:00",
-      "message": "Cycle completed; equity 9346.2761"
-    },
-    {
-      "time": "2026-11-07T09:48:22+00:00",
-      "message": "Cycle completed; equity 9324.876"
-    },
-    {
-      "time": "2026-11-07T02:56:54+00:00",
-      "message": "Cycle completed; equity 9315.7376"
-    },
-    {
-      "time": "2026-11-06T23:20:17+00:00",
-      "message": "Cycle completed; equity 9322.148"
-    },
-    {
-      "time": "2026-11-06T18:21:10+00:00",
-      "message": "Cycle completed; equity 9302.6356"
     }
   ],
   "equity_curve": [
@@ -2533,14 +2586,18 @@
     {
       "time": "2026-11-17T19:37:15+00:00",
       "equity": 9953.3722
+    },
+    {
+      "time": "2026-11-18T01:51:50+00:00",
+      "equity": 9888.2588
     }
   ],
-  "last_run": "2026-11-17T19:37:15+00:00",
-  "last_market_data": "2026-11-17T19:37:15+00:00",
+  "last_run": "2026-11-18T01:51:50+00:00",
+  "last_market_data": "2026-11-18T01:51:49+00:00",
   "status": "RUNNING",
   "error": null,
-  "day": "2026-11-17",
-  "day_start_equity": 9987.2952,
+  "day": "2026-11-18",
+  "day_start_equity": 9953.3722,
   "halted": false,
-  "run_count": 179
+  "run_count": 180
 }
