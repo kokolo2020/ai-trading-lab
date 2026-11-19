@@ -2,9 +2,9 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 4249.796179681806,
-  "equity": 9743.9209,
-  "realized_pnl": -159.21362798474283,
+  "cash": 5823.810753883729,
+  "equity": 9752.6079,
+  "realized_pnl": -259.875714538599,
   "positions": [
     {
       "id": "1794966710859SOL-USDT",
@@ -19,8 +19,8 @@
       "stop": 72.53956214285714,
       "take": 78.2624907142857,
       "fill_type": "SIMULATED",
-      "mark": 73.53,
-      "unrealized_pnl": -27.644
+      "mark": 74.82,
+      "unrealized_pnl": 5.8011
     },
     {
       "id": "1794966710859XRP-USDT",
@@ -35,9 +35,11 @@
       "stop": 0.9555166707142857,
       "take": 1.0177403135714285,
       "fill_type": "SIMULATED",
-      "mark": 0.96628,
-      "unrealized_pnl": -24.1803
-    },
+      "mark": 0.98151,
+      "unrealized_pnl": 6.6825
+    }
+  ],
+  "trades": [
     {
       "id": "1795026028534NEAR-USDT",
       "symbol": "NEAR-USDT",
@@ -52,10 +54,13 @@
       "take": 3.0441893428571425,
       "fill_type": "SIMULATED",
       "mark": 3.3145,
-      "unrealized_pnl": -45.0411
-    }
-  ],
-  "trades": [
+      "unrealized_pnl": -45.0411,
+      "exit": 3.4219101,
+      "exit_time": "2026-11-19T07:53:20+00:00",
+      "exit_fee": 1.7702225174779607,
+      "net_pnl": -100.6621,
+      "reason": "STOP"
+    },
     {
       "id": "1794966710859NEAR-USDT",
       "symbol": "NEAR-USDT",
@@ -1571,6 +1576,14 @@
   ],
   "events": [
     {
+      "time": "2026-11-19T07:53:20+00:00",
+      "message": "Cycle completed; equity 9752.6079"
+    },
+    {
+      "time": "2026-11-19T07:53:20+00:00",
+      "message": "SIM CLOSE SHORT NEAR-USDT STOP PNL -100.66"
+    },
+    {
       "time": "2026-11-19T00:33:36+00:00",
       "message": "Cycle completed; equity 9743.9209"
     },
@@ -1881,14 +1894,6 @@
     {
       "time": "2026-11-08T20:36:24+00:00",
       "message": "SIM CLOSE SHORT SOL-USDT TIME EXIT PNL 11.37"
-    },
-    {
-      "time": "2026-11-08T16:16:19+00:00",
-      "message": "Cycle completed; equity 9354.3586"
-    },
-    {
-      "time": "2026-11-08T09:31:03+00:00",
-      "message": "Cycle completed; equity 9363.2438"
     }
   ],
   "equity_curve": [
@@ -2623,14 +2628,18 @@
     {
       "time": "2026-11-19T00:33:36+00:00",
       "equity": 9743.9209
+    },
+    {
+      "time": "2026-11-19T07:53:20+00:00",
+      "equity": 9752.6079
     }
   ],
-  "last_run": "2026-11-19T00:33:36+00:00",
-  "last_market_data": "2026-11-19T00:33:36+00:00",
+  "last_run": "2026-11-19T07:53:20+00:00",
+  "last_market_data": "2026-11-19T07:53:20+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-19",
   "day_start_equity": 9814.1802,
   "halted": false,
-  "run_count": 183
+  "run_count": 184
 }
