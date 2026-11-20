@@ -2,25 +2,80 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 4285.4433418098815,
-  "equity": 9761.3517,
-  "realized_pnl": -224.9338465919105,
+  "cash": 4813.164318042417,
+  "equity": 10039.2078,
+  "realized_pnl": 52.29647684674265,
   "positions": [
     {
-      "id": "1795179510118NEAR-USDT",
-      "symbol": "NEAR-USDT",
+      "id": "1795208372876ETH-USDT",
+      "symbol": "ETH-USDT",
       "side": "SHORT",
       "direction": -1,
-      "qty": 531.9887997387693,
-      "entry": 2.9589198,
-      "entry_time": "2026-11-20T12:58:30+00:00",
-      "margin": 1574.1121929252793,
-      "entry_fee": 1.5741121929252793,
-      "stop": 3.050792657142857,
-      "take": 2.7751740857142857,
+      "qty": 1.032111737423874,
+      "entry": 1600.67926,
+      "entry_time": "2026-11-20T20:59:32+00:00",
+      "margin": 1652.079852096961,
+      "entry_fee": 1.652079852096961,
+      "stop": 1649.3769742857144,
+      "take": 1503.2838314285716,
       "fill_type": "SIMULATED",
-      "mark": 2.9604,
-      "unrealized_pnl": -3.9365
+      "mark": 1601.48,
+      "unrealized_pnl": -4.1314
+    },
+    {
+      "id": "1795208372876BNB-USDT",
+      "symbol": "BNB-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 3.7695485505609123,
+      "entry": 533.3421955000001,
+      "entry_time": "2026-11-20T20:59:32+00:00",
+      "margin": 2010.4593000000002,
+      "entry_fee": 2.0104593000000004,
+      "stop": 545.5694455000001,
+      "take": 508.88769550000006,
+      "fill_type": "SIMULATED",
+      "mark": 533.609,
+      "unrealized_pnl": -5.0277
+    },
+    {
+      "id": "1795208372876SUI-USDT",
+      "symbol": "SUI-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 2478.5514441704804,
+      "entry": 0.63398285,
+      "entry_time": "2026-11-20T20:59:32+00:00",
+      "margin": 1571.359108446817,
+      "entry_fee": 1.571359108446817,
+      "stop": 0.6542614214285715,
+      "take": 0.5934257071428571,
+      "fill_type": "SIMULATED",
+      "mark": 0.6343,
+      "unrealized_pnl": -3.9296
+    }
+  ],
+  "trades": [
+    {
+      "id": "1795179510118SOL-USDT",
+      "symbol": "SOL-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 27.44480476522813,
+      "entry": 71.234365,
+      "entry_time": "2026-11-20T12:58:30+00:00",
+      "margin": 1955.01324,
+      "entry_fee": 1.95501324,
+      "stop": 72.70365071428571,
+      "take": 68.29579357142856,
+      "fill_type": "SIMULATED",
+      "mark": 71.27,
+      "unrealized_pnl": -4.889,
+      "exit": 67.49372999999999,
+      "exit_time": "2026-11-20T20:59:31+00:00",
+      "exit_fee": 1.8523522427270205,
+      "net_pnl": 98.8536,
+      "reason": "TARGET"
     },
     {
       "id": "1795179510118LTC-USDT",
@@ -36,26 +91,34 @@
       "take": 39.985215,
       "fill_type": "SIMULATED",
       "mark": 41.57,
-      "unrealized_pnl": -4.889
+      "unrealized_pnl": -4.889,
+      "exit": 39.709844999999994,
+      "exit_time": "2026-11-20T20:59:31+00:00",
+      "exit_fee": 1.8684654507515435,
+      "net_pnl": 82.7243,
+      "reason": "TARGET"
     },
     {
-      "id": "1795179510118SOL-USDT",
-      "symbol": "SOL-USDT",
+      "id": "1795179510118NEAR-USDT",
+      "symbol": "NEAR-USDT",
       "side": "SHORT",
       "direction": -1,
-      "qty": 27.44480476522813,
-      "entry": 71.234365,
+      "qty": 531.9887997387693,
+      "entry": 2.9589198,
       "entry_time": "2026-11-20T12:58:30+00:00",
-      "margin": 1955.01324,
-      "entry_fee": 1.95501324,
-      "stop": 72.70365071428571,
-      "take": 68.29579357142856,
+      "margin": 1574.1121929252793,
+      "entry_fee": 1.5741121929252793,
+      "stop": 3.050792657142857,
+      "take": 2.7751740857142857,
       "fill_type": "SIMULATED",
-      "mark": 71.27,
-      "unrealized_pnl": -4.889
-    }
-  ],
-  "trades": [
+      "mark": 2.9604,
+      "unrealized_pnl": -3.9365,
+      "exit": 2.7733859999999995,
+      "exit_time": "2026-11-20T20:59:31+00:00",
+      "exit_fee": 1.4754102893523064,
+      "net_pnl": 95.6524,
+      "reason": "TARGET"
+    },
     {
       "id": "1795130955837NEAR-USDT",
       "symbol": "NEAR-USDT",
@@ -1655,6 +1718,34 @@
   ],
   "events": [
     {
+      "time": "2026-11-20T20:59:32+00:00",
+      "message": "Cycle completed; equity 10039.2078"
+    },
+    {
+      "time": "2026-11-20T20:59:32+00:00",
+      "message": "SIM OPEN SHORT SUI-USDT notional 1571.36"
+    },
+    {
+      "time": "2026-11-20T20:59:32+00:00",
+      "message": "SIM OPEN SHORT BNB-USDT notional 2010.46"
+    },
+    {
+      "time": "2026-11-20T20:59:32+00:00",
+      "message": "SIM OPEN SHORT ETH-USDT notional 1652.08"
+    },
+    {
+      "time": "2026-11-20T20:59:31+00:00",
+      "message": "SIM CLOSE SHORT SOL-USDT TARGET PNL 98.85"
+    },
+    {
+      "time": "2026-11-20T20:59:31+00:00",
+      "message": "SIM CLOSE SHORT LTC-USDT TARGET PNL 82.72"
+    },
+    {
+      "time": "2026-11-20T20:59:31+00:00",
+      "message": "SIM CLOSE SHORT NEAR-USDT TARGET PNL 95.65"
+    },
+    {
       "time": "2026-11-20T12:58:30+00:00",
       "message": "Cycle completed; equity 9761.3517"
     },
@@ -1945,34 +2036,6 @@
     {
       "time": "2026-11-11T07:59:42+00:00",
       "message": "SIM OPEN SHORT LTC-USDT notional 1923.72"
-    },
-    {
-      "time": "2026-11-11T01:24:01+00:00",
-      "message": "Cycle completed; equity 9634.3448"
-    },
-    {
-      "time": "2026-11-10T21:26:20+00:00",
-      "message": "Cycle completed; equity 9574.7439"
-    },
-    {
-      "time": "2026-11-10T15:40:55+00:00",
-      "message": "Cycle completed; equity 9618.8129"
-    },
-    {
-      "time": "2026-11-10T15:40:55+00:00",
-      "message": "SIM OPEN SHORT XRP-USDT notional 1925.65"
-    },
-    {
-      "time": "2026-11-10T15:40:55+00:00",
-      "message": "SIM OPEN LONG NEAR-USDT notional 1840.59"
-    },
-    {
-      "time": "2026-11-10T15:40:54+00:00",
-      "message": "SIM CLOSE SHORT SOL-USDT TARGET PNL 77.24"
-    },
-    {
-      "time": "2026-11-10T15:40:54+00:00",
-      "message": "SIM CLOSE SHORT XRP-USDT TARGET PNL 113.58"
     }
   ],
   "equity_curve": [
@@ -2727,14 +2790,18 @@
     {
       "time": "2026-11-20T12:58:30+00:00",
       "equity": 9761.3517
+    },
+    {
+      "time": "2026-11-20T20:59:32+00:00",
+      "equity": 10039.2078
     }
   ],
-  "last_run": "2026-11-20T12:58:30+00:00",
-  "last_market_data": "2026-11-20T12:58:28+00:00",
+  "last_run": "2026-11-20T20:59:32+00:00",
+  "last_market_data": "2026-11-20T20:59:31+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-20",
   "day_start_equity": 9670.2504,
   "halted": false,
-  "run_count": 188
+  "run_count": 189
 }
