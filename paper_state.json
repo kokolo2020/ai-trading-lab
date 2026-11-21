@@ -3,7 +3,7 @@
   "mode": "PAPER",
   "initial_equity": 10000,
   "cash": 4813.164318042417,
-  "equity": 9959.6697,
+  "equity": 10070.8732,
   "realized_pnl": 52.29647684674265,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 1649.3769742857144,
       "take": 1503.2838314285716,
       "fill_type": "SIMULATED",
-      "mark": 1627.28,
-      "unrealized_pnl": -30.7866
+      "mark": 1637.09,
+      "unrealized_pnl": -40.9217
     },
     {
       "id": "1795208372876BNB-USDT",
@@ -35,8 +35,8 @@
       "stop": 545.5694455000001,
       "take": 508.88769550000006,
       "fill_type": "SIMULATED",
-      "mark": 539.405,
-      "unrealized_pnl": -26.8978
+      "mark": 525.001,
+      "unrealized_pnl": 27.4531
     },
     {
       "id": "1795208372876SUI-USDT",
@@ -51,8 +51,8 @@
       "stop": 0.6542614214285715,
       "take": 0.5934257071428571,
       "fill_type": "SIMULATED",
-      "mark": 0.6468,
-      "unrealized_pnl": -34.9425
+      "mark": 0.6198,
+      "unrealized_pnl": 32.0454
     }
   ],
   "trades": [
@@ -1718,6 +1718,10 @@
   ],
   "events": [
     {
+      "time": "2026-11-21T09:41:24+00:00",
+      "message": "Cycle completed; equity 10070.8732"
+    },
+    {
       "time": "2026-11-21T02:05:48+00:00",
       "message": "Cycle completed; equity 9959.6697"
     },
@@ -2032,10 +2036,6 @@
     {
       "time": "2026-11-11T16:03:34+00:00",
       "message": "SIM CLOSE LONG NEAR-USDT TARGET PNL 93.02"
-    },
-    {
-      "time": "2026-11-11T07:59:42+00:00",
-      "message": "Cycle completed; equity 9613.7663"
     }
   ],
   "equity_curve": [
@@ -2798,14 +2798,18 @@
     {
       "time": "2026-11-21T02:05:48+00:00",
       "equity": 9959.6697
+    },
+    {
+      "time": "2026-11-21T09:41:24+00:00",
+      "equity": 10070.8732
     }
   ],
-  "last_run": "2026-11-21T02:05:48+00:00",
-  "last_market_data": "2026-11-21T02:05:47+00:00",
+  "last_run": "2026-11-21T09:41:24+00:00",
+  "last_market_data": "2026-11-21T09:41:23+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-21",
   "day_start_equity": 10039.2078,
   "halted": false,
-  "run_count": 190
+  "run_count": 191
 }
