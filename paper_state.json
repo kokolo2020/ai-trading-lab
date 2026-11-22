@@ -2,26 +2,10 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 5694.286867025583,
-  "equity": 9861.5815,
-  "realized_pnl": -93.85442453598938,
+  "cash": 5224.295688078341,
+  "equity": 9884.5265,
+  "realized_pnl": -156.90421707849424,
   "positions": [
-    {
-      "id": "1795208372876SUI-USDT",
-      "symbol": "SUI-USDT",
-      "side": "SHORT",
-      "direction": -1,
-      "qty": 2478.5514441704804,
-      "entry": 0.63398285,
-      "entry_time": "2026-11-20T20:59:32+00:00",
-      "margin": 1571.359108446817,
-      "entry_fee": 1.571359108446817,
-      "stop": 0.6542614214285715,
-      "take": 0.5934257071428571,
-      "fill_type": "SIMULATED",
-      "mark": 0.6531,
-      "unrealized_pnl": -50.5729
-    },
     {
       "id": "1795280261066XRP-USDT",
       "symbol": "XRP-USDT",
@@ -35,8 +19,8 @@
       "stop": 0.9014633085714286,
       "take": 0.9877480228571429,
       "fill_type": "SIMULATED",
-      "mark": 0.92659,
-      "unrealized_pnl": -9.4237
+      "mark": 0.92806,
+      "unrealized_pnl": -6.9037
     },
     {
       "id": "1795280261066NEAR-USDT",
@@ -51,11 +35,48 @@
       "stop": 2.7223046785714287,
       "take": 3.1291753928571433,
       "fill_type": "SIMULATED",
-      "mark": 2.9061,
-      "unrealized_pnl": 15.4326
+      "mark": 3.0102,
+      "unrealized_pnl": 53.2777
+    },
+    {
+      "id": "1795368375398ETH-USDT",
+      "symbol": "ETH-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 1.1534072984045096,
+      "entry": 1714.826985,
+      "entry_time": "2026-11-22T17:26:15+00:00",
+      "margin": 1977.8939600000003,
+      "entry_fee": 1.9778939600000003,
+      "stop": 1685.2032707142857,
+      "take": 1774.0744135714283,
+      "fill_type": "SIMULATED",
+      "mark": 1713.97,
+      "unrealized_pnl": -4.9433
     }
   ],
   "trades": [
+    {
+      "id": "1795208372876SUI-USDT",
+      "symbol": "SUI-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 2478.5514441704804,
+      "entry": 0.63398285,
+      "entry_time": "2026-11-20T20:59:32+00:00",
+      "margin": 1571.359108446817,
+      "entry_fee": 1.571359108446817,
+      "stop": 0.6542614214285715,
+      "take": 0.5934257071428571,
+      "fill_type": "SIMULATED",
+      "mark": 0.6531,
+      "unrealized_pnl": -50.5729,
+      "exit": 0.6581289,
+      "exit_time": "2026-11-22T17:26:14+00:00",
+      "exit_fee": 1.6312063355453297,
+      "net_pnl": -63.0498,
+      "reason": "STOP"
+    },
     {
       "id": "1795208372876BNB-USDT",
       "symbol": "BNB-USDT",
@@ -1760,6 +1781,18 @@
   ],
   "events": [
     {
+      "time": "2026-11-22T17:26:15+00:00",
+      "message": "Cycle completed; equity 9884.5265"
+    },
+    {
+      "time": "2026-11-22T17:26:15+00:00",
+      "message": "SIM OPEN LONG ETH-USDT notional 1977.89"
+    },
+    {
+      "time": "2026-11-22T17:26:14+00:00",
+      "message": "SIM CLOSE SHORT SUI-USDT STOP PNL -63.05"
+    },
+    {
       "time": "2026-11-22T09:46:44+00:00",
       "message": "Cycle completed; equity 9861.5815"
     },
@@ -2066,18 +2099,6 @@
     {
       "time": "2026-11-13T06:57:08+00:00",
       "message": "SIM OPEN SHORT ETH-USDT notional 1934.1"
-    },
-    {
-      "time": "2026-11-13T00:17:03+00:00",
-      "message": "Cycle completed; equity 9670.5048"
-    },
-    {
-      "time": "2026-11-12T19:06:26+00:00",
-      "message": "Cycle completed; equity 9670.5048"
-    },
-    {
-      "time": "2026-11-12T11:35:28+00:00",
-      "message": "Cycle completed; equity 9670.5048"
     }
   ],
   "equity_curve": [
@@ -2860,14 +2881,18 @@
     {
       "time": "2026-11-22T09:46:44+00:00",
       "equity": 9861.5815
+    },
+    {
+      "time": "2026-11-22T17:26:15+00:00",
+      "equity": 9884.5265
     }
   ],
-  "last_run": "2026-11-22T09:46:44+00:00",
-  "last_market_data": "2026-11-22T09:46:43+00:00",
+  "last_run": "2026-11-22T17:26:15+00:00",
+  "last_market_data": "2026-11-22T17:26:14+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-22",
   "day_start_equity": 9875.0991,
   "halted": false,
-  "run_count": 195
+  "run_count": 196
 }
