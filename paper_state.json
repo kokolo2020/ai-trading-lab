@@ -2,8 +2,8 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 5996.296201532599,
-  "equity": 10053.3447,
+  "cash": 4010.8953240725996,
+  "equity": 9912.1303,
   "realized_pnl": -38.80600160739904,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stop": 0.951342092857143,
       "take": 0.8982146642857144,
       "fill_type": "SIMULATED",
-      "mark": 0.90192,
-      "unrealized_pnl": 63.2126
+      "mark": 0.93823,
+      "unrealized_pnl": -13.6865
     },
     {
       "id": "1795578344769ETH-USDT",
@@ -35,8 +35,24 @@
       "stop": 1692.7781007142855,
       "take": 1611.0542435714285,
       "fill_type": "SIMULATED",
-      "mark": 1637.96,
-      "unrealized_pnl": 28.9382
+      "mark": 1687.7,
+      "unrealized_pnl": -30.4202
+    },
+    {
+      "id": "1795646700732SOL-USDT",
+      "symbol": "SOL-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 28.127500665104446,
+      "entry": 70.51524,
+      "entry_time": "2026-11-25T22:45:00+00:00",
+      "margin": 1983.41746,
+      "entry_fee": 1.9834174599999999,
+      "stop": 68.81281142857144,
+      "take": 73.92009714285716,
+      "fill_type": "SIMULATED",
+      "mark": 70.48,
+      "unrealized_pnl": -4.9571
     }
   ],
   "trades": [
@@ -1849,6 +1865,14 @@
   ],
   "events": [
     {
+      "time": "2026-11-25T22:45:00+00:00",
+      "message": "Cycle completed; equity 9912.1303"
+    },
+    {
+      "time": "2026-11-25T22:45:00+00:00",
+      "message": "SIM OPEN LONG SOL-USDT notional 1983.42"
+    },
+    {
       "time": "2026-11-25T13:37:11+00:00",
       "message": "Cycle completed; equity 10053.3447"
     },
@@ -2159,14 +2183,6 @@
     {
       "time": "2026-11-14T23:27:41+00:00",
       "message": "SIM CLOSE SHORT BNB-USDT TARGET PNL 70.16"
-    },
-    {
-      "time": "2026-11-14T23:27:41+00:00",
-      "message": "SIM CLOSE SHORT LTC-USDT TARGET PNL 111.58"
-    },
-    {
-      "time": "2026-11-14T19:50:38+00:00",
-      "message": "Cycle completed; equity 10010.5021"
     }
   ],
   "equity_curve": [
@@ -2985,14 +3001,18 @@
     {
       "time": "2026-11-25T13:37:11+00:00",
       "equity": 10053.3447
+    },
+    {
+      "time": "2026-11-25T22:45:00+00:00",
+      "equity": 9912.1303
     }
   ],
-  "last_run": "2026-11-25T13:37:11+00:00",
-  "last_market_data": "2026-11-25T13:37:11+00:00",
+  "last_run": "2026-11-25T22:45:00+00:00",
+  "last_market_data": "2026-11-25T22:45:00+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-25",
   "day_start_equity": 9939.141,
   "halted": false,
-  "run_count": 204
+  "run_count": 205
 }
