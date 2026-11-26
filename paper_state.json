@@ -2,26 +2,44 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 4010.8953240725996,
-  "equity": 9912.1303,
-  "realized_pnl": -38.80600160739904,
+  "cash": 5896.187339643657,
+  "equity": 9867.2069,
+  "realized_pnl": -142.00905459634257,
   "positions": [
     {
-      "id": "1795515074159XRP-USDT",
-      "symbol": "XRP-USDT",
-      "side": "SHORT",
-      "direction": -1,
-      "qty": 2115.7326334722866,
-      "entry": 0.9336329500000001,
-      "entry_time": "2026-11-24T10:11:14+00:00",
-      "margin": 1975.3177,
-      "entry_fee": 1.9753177000000002,
-      "stop": 0.951342092857143,
-      "take": 0.8982146642857144,
+      "id": "1795646700732SOL-USDT",
+      "symbol": "SOL-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 28.127500665104446,
+      "entry": 70.51524,
+      "entry_time": "2026-11-25T22:45:00+00:00",
+      "margin": 1983.41746,
+      "entry_fee": 1.9834174599999999,
+      "stop": 68.81281142857144,
+      "take": 73.92009714285716,
       "fill_type": "SIMULATED",
-      "mark": 0.93823,
-      "unrealized_pnl": -13.6865
+      "mark": 71.16,
+      "unrealized_pnl": 14.1505
     },
+    {
+      "id": "1795667478105XRP-USDT",
+      "symbol": "XRP-USDT",
+      "side": "LONG",
+      "direction": 1,
+      "qty": 2062.586570800388,
+      "entry": 0.9572583899999999,
+      "entry_time": "2026-11-26T04:31:18+00:00",
+      "margin": 1974.4283,
+      "entry_fee": 1.9744283,
+      "stop": 0.9365973185714285,
+      "take": 0.9985805328571427,
+      "fill_type": "SIMULATED",
+      "mark": 0.95678,
+      "unrealized_pnl": -4.9346
+    }
+  ],
+  "trades": [
     {
       "id": "1795578344769ETH-USDT",
       "symbol": "ETH-USDT",
@@ -36,26 +54,34 @@
       "take": 1611.0542435714285,
       "fill_type": "SIMULATED",
       "mark": 1687.7,
-      "unrealized_pnl": -30.4202
+      "unrealized_pnl": -30.4202,
+      "exit": 1703.4512999999997,
+      "exit_time": "2026-11-26T04:31:17+00:00",
+      "exit_fee": 2.030820038887527,
+      "net_pnl": -49.2173,
+      "reason": "STOP"
     },
     {
-      "id": "1795646700732SOL-USDT",
-      "symbol": "SOL-USDT",
-      "side": "LONG",
-      "direction": 1,
-      "qty": 28.127500665104446,
-      "entry": 70.51524,
-      "entry_time": "2026-11-25T22:45:00+00:00",
-      "margin": 1983.41746,
-      "entry_fee": 1.9834174599999999,
-      "stop": 68.81281142857144,
-      "take": 73.92009714285716,
+      "id": "1795515074159XRP-USDT",
+      "symbol": "XRP-USDT",
+      "side": "SHORT",
+      "direction": -1,
+      "qty": 2115.7326334722866,
+      "entry": 0.9336329500000001,
+      "entry_time": "2026-11-24T10:11:14+00:00",
+      "margin": 1975.3177,
+      "entry_fee": 1.9753177000000002,
+      "stop": 0.951342092857143,
+      "take": 0.8982146642857144,
       "fill_type": "SIMULATED",
-      "mark": 70.48,
-      "unrealized_pnl": -4.9571
-    }
-  ],
-  "trades": [
+      "mark": 0.93823,
+      "unrealized_pnl": -13.6865,
+      "exit": 0.9572583899999999,
+      "exit_time": "2026-11-26T04:31:17+00:00",
+      "exit_fee": 2.025302814388141,
+      "net_pnl": -53.9857,
+      "reason": "STOP"
+    },
     {
       "id": "1795515074159SUI-USDT",
       "symbol": "SUI-USDT",
@@ -1865,6 +1891,22 @@
   ],
   "events": [
     {
+      "time": "2026-11-26T04:31:18+00:00",
+      "message": "Cycle completed; equity 9867.2069"
+    },
+    {
+      "time": "2026-11-26T04:31:18+00:00",
+      "message": "SIM OPEN LONG XRP-USDT notional 1974.43"
+    },
+    {
+      "time": "2026-11-26T04:31:17+00:00",
+      "message": "SIM CLOSE SHORT ETH-USDT STOP PNL -49.22"
+    },
+    {
+      "time": "2026-11-26T04:31:17+00:00",
+      "message": "SIM CLOSE SHORT XRP-USDT STOP PNL -53.99"
+    },
+    {
       "time": "2026-11-25T22:45:00+00:00",
       "message": "Cycle completed; equity 9912.1303"
     },
@@ -2167,22 +2209,6 @@
     {
       "time": "2026-11-14T23:27:43+00:00",
       "message": "SIM OPEN SHORT XRP-USDT notional 1566.8"
-    },
-    {
-      "time": "2026-11-14T23:27:43+00:00",
-      "message": "SIM OPEN SHORT DOGE-USDT notional 1475.96"
-    },
-    {
-      "time": "2026-11-14T23:27:43+00:00",
-      "message": "SIM OPEN SHORT DOT-USDT notional 1361.89"
-    },
-    {
-      "time": "2026-11-14T23:27:41+00:00",
-      "message": "SIM CLOSE SHORT ETH-USDT TARGET PNL 110.16"
-    },
-    {
-      "time": "2026-11-14T23:27:41+00:00",
-      "message": "SIM CLOSE SHORT BNB-USDT TARGET PNL 70.16"
     }
   ],
   "equity_curve": [
@@ -3005,14 +3031,18 @@
     {
       "time": "2026-11-25T22:45:00+00:00",
       "equity": 9912.1303
+    },
+    {
+      "time": "2026-11-26T04:31:18+00:00",
+      "equity": 9867.2069
     }
   ],
-  "last_run": "2026-11-25T22:45:00+00:00",
-  "last_market_data": "2026-11-25T22:45:00+00:00",
+  "last_run": "2026-11-26T04:31:18+00:00",
+  "last_market_data": "2026-11-26T04:31:17+00:00",
   "status": "RUNNING",
   "error": null,
-  "day": "2026-11-25",
-  "day_start_equity": 9939.141,
+  "day": "2026-11-26",
+  "day_start_equity": 9912.1303,
   "halted": false,
-  "run_count": 205
+  "run_count": 206
 }
