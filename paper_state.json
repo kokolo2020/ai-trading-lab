@@ -2,9 +2,9 @@
   "version": "9.2",
   "mode": "PAPER",
   "initial_equity": 10000,
-  "cash": 3910.6286845636564,
-  "equity": 9912.9179,
-  "realized_pnl": -142.00905459634257,
+  "cash": 5809.043538279361,
+  "equity": 9734.1055,
+  "realized_pnl": -229.15285596063828,
   "positions": [
     {
       "id": "1795646700732SOL-USDT",
@@ -19,8 +19,8 @@
       "stop": 68.81281142857144,
       "take": 73.92009714285716,
       "fill_type": "SIMULATED",
-      "mark": 72.73,
-      "unrealized_pnl": 58.2665
+      "mark": 70.84,
+      "unrealized_pnl": 5.1587
     },
     {
       "id": "1795667478105XRP-USDT",
@@ -35,9 +35,11 @@
       "stop": 0.9365973185714285,
       "take": 0.9985805328571427,
       "fill_type": "SIMULATED",
-      "mark": 0.95996,
-      "unrealized_pnl": 1.6179
-    },
+      "mark": 0.93884,
+      "unrealized_pnl": -41.9004
+    }
+  ],
+  "trades": [
     {
       "id": "1795755560672ETH-USDT",
       "symbol": "ETH-USDT",
@@ -52,10 +54,13 @@
       "take": 1778.8509999999999,
       "fill_type": "SIMULATED",
       "mark": 1732.0,
-      "unrealized_pnl": -4.9575
-    }
-  ],
-  "trades": [
+      "unrealized_pnl": -4.9575,
+      "exit": 1660.1295200000002,
+      "exit_time": "2026-11-27T14:53:45+00:00",
+      "exit_fee": 1.9003151688845892,
+      "net_pnl": -87.1438,
+      "reason": "STOP"
+    },
     {
       "id": "1795578344769ETH-USDT",
       "symbol": "ETH-USDT",
@@ -1907,6 +1912,14 @@
   ],
   "events": [
     {
+      "time": "2026-11-27T14:53:45+00:00",
+      "message": "Cycle completed; equity 9734.1055"
+    },
+    {
+      "time": "2026-11-27T14:53:45+00:00",
+      "message": "SIM CLOSE LONG ETH-USDT STOP PNL -87.14"
+    },
+    {
       "time": "2026-11-27T04:59:20+00:00",
       "message": "Cycle completed; equity 9912.9179"
     },
@@ -2217,14 +2230,6 @@
     {
       "time": "2026-11-15T10:40:20+00:00",
       "message": "Cycle completed; equity 9992.2928"
-    },
-    {
-      "time": "2026-11-15T02:59:19+00:00",
-      "message": "Cycle completed; equity 9992.2928"
-    },
-    {
-      "time": "2026-11-15T02:59:19+00:00",
-      "message": "SIM CLOSE SHORT XRP-USDT STOP PNL -102.47"
     }
   ],
   "equity_curve": [
@@ -3063,14 +3068,18 @@
     {
       "time": "2026-11-27T04:59:20+00:00",
       "equity": 9912.9179
+    },
+    {
+      "time": "2026-11-27T14:53:45+00:00",
+      "equity": 9734.1055
     }
   ],
-  "last_run": "2026-11-27T04:59:20+00:00",
-  "last_market_data": "2026-11-27T04:59:20+00:00",
+  "last_run": "2026-11-27T14:53:45+00:00",
+  "last_market_data": "2026-11-27T14:53:45+00:00",
   "status": "RUNNING",
   "error": null,
   "day": "2026-11-27",
   "day_start_equity": 9843.3104,
   "halted": false,
-  "run_count": 209
+  "run_count": 210
 }
